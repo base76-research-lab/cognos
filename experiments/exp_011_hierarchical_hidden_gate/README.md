@@ -34,3 +34,9 @@ python run.py --config configs/cifar10.yaml --mode all
 
 - CW bland gate-pass vs gate-drop
 - Confident-correct rate
+- `cw_pass`, `cw_drop`, `acc_pass`, `acc_drop`
+
+## Tau-beteende
+
+- `tau_quantile` beräknas globalt per seed och variant på eval-fördelningen (inte per batch/per epoch).
+- Gatebeslut använder denna kvantiltröskel via `gate_mask(entropy, tau_quantile)`.

@@ -212,10 +212,18 @@ def compute_metrics(probs: np.ndarray,
             "confident_correct_rate": round(float(cc), 5),
         }
 
+    pass_part = _part(mask_pass)
+    drop_part = _part(mask_drop)
+
     result["gate_partition"] = {
-        "pass": _part(mask_pass),
-        "drop": _part(mask_drop),
+        "pass": pass_part,
+        "drop": drop_part,
     }
+
+    result["acc_pass"] = pass_part["accuracy"]
+    result["acc_drop"] = drop_part["accuracy"]
+    result["cw_pass"] = pass_part["cw_rate"]
+    result["cw_drop"] = drop_part["cw_rate"]
 
     if n_auto > 10:
         result["pmax_bins"] = pmax_bin_stats(p_auto, y_auto, e_auto, n_pmax_bins)

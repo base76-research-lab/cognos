@@ -5,6 +5,8 @@ batch_size: 128
 epochs: 15
 eval_n: 2000
 seeds: [0, 1]
+num_workers: 0
+pin_memory: false
 tau_quantile: 0.67
 tau_hidden_quantile: 0.67
 residual_quantile: 0.67

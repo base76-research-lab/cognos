@@ -33,7 +33,10 @@ DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 def train(model, cfg, seed):
     train_loader, _ = get_cifar10_loaders(
         batch_size=cfg["batch_size"], eval_n=cfg["eval_n"],
-        seed=seed, data_dir=cfg["data_dir"]
+        seed=seed,
+        data_dir=cfg["data_dir"],
+        num_workers=cfg.get("num_workers"),
+        pin_memory=cfg.get("pin_memory"),
     )
     optimizer = optim.Adam(model.parameters(), lr=1e-3, weight_decay=1e-4)
     scheduler = optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=cfg["epochs"])
@@ -47,7 +50,10 @@ def train(model, cfg, seed):
 def eval_two_layer(model, cfg, seed, tau_q):
     _, eval_loader = get_cifar10_loaders(
         batch_size=cfg["batch_size"], eval_n=cfg["eval_n"],
-        seed=seed, data_dir=cfg["data_dir"]
+        seed=seed,
+        data_dir=cfg["data_dir"],
+        num_workers=cfg.get("num_workers"),
+        pin_memory=cfg.get("pin_memory"),
     )
     probs, labels, ent_l1, ent_l2 = collect_eval(model, eval_loader, DEVICE)
 
@@ -76,7 +82,10 @@ def eval_gate_only(model, cfg, seed, tau_q):
 
     _, eval_loader = get_cifar10_loaders(
         batch_size=cfg["batch_size"], eval_n=cfg["eval_n"],
-        seed=seed, data_dir=cfg["data_dir"]
+        seed=seed,
+        data_dir=cfg["data_dir"],
+        num_workers=cfg.get("num_workers"),
+        pin_memory=cfg.get("pin_memory"),
     )
 
     model.eval()
@@ -104,7 +113,10 @@ def eval_two_stage(model, cfg, seed, tau_q):
 
     _, eval_loader = get_cifar10_loaders(
         batch_size=cfg["batch_size"], eval_n=cfg["eval_n"],
-        seed=seed, data_dir=cfg["data_dir"]
+        seed=seed,
+        data_dir=cfg["data_dir"],
+        num_workers=cfg.get("num_workers"),
+        pin_memory=cfg.get("pin_memory"),
     )
 
     model.eval()

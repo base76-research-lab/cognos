@@ -1,81 +1,62 @@
-# exp_011 — Findings: Hierarchical hidden-gate ablation
+# exp_011 — Findings: Hierarchical Hidden-Gate Ablation
 
-**Datum:** 2026-02-25  
+**Date:** 2026-02-25  
 **Researcher:** Björn Wikström  
-**Föregående:** exp_010 (CIFAR10 closed-loop vs gate-only)
+**Dataset:** CIFAR-10  
+**Seeds in current artifact:** 2 (`0, 1`)
 
 ---
 
-## Fråga
+## Research Question
 
-Ger hierarkisk gating (L1 + hidden gate) med/utan residual-analys bättre riskseparation än gate-only och closed-loop?
-
----
-
-## Beslutskriterier
-
-### Gate_only = robust om
-- CW minskar i medel
-- CW-minskningen håller i minst 4/5 seeds
-
-### Closed_loop = potentiell vinnare om
-- CW minskar
-- accuracy-drop inte är oproportionerlig givet coverage (acc/coverage rimlig)
-
-### Closed_loop = training mismatch om
-- gate_only stabilt förbättrar CW
-- closed_loop stabilt försämrar CW
+Does hierarchical gating (L1 + hidden gate), with and without residual filtering, improve confident-wrong control compared with closed-loop and gate-only baselines?
 
 ---
 
-## Extra loggar (obligatoriska)
+## Run Artifact Used
 
-1. **CW bland gate-pass vs gate-drop**
-2. **Confident-correct rate**
-
----
-
-## Setup
-
-- Dataset: CIFAR10
-- Modes:
-  - open_loop
-  - closed_loop
-  - gate_only
-  - two_stage_no_residual
-  - two_stage_with_residual
-- Output-filer:
-  - `results/results_all.json` (lokalt)
-  - `/content/results/exp_011_*` (Colab)
+- Source: `results/results_all.json`
+- Observed modes in artifact: `open_loop`, `closed_loop`, `gate_only`
+- Not present in this artifact: `two_stage_no_residual`, `two_stage_with_residual`, `decision_criteria`
 
 ---
 
-## Resultat
+## Results
 
-_Fylls i efter körning._
+### Per Seed (CW-rate)
 
-### Per seed
+| Seed | open_loop | closed_loop | gate_only |
+|------|-----------|-------------|-----------|
+| 0    | 0.04000   | 0.04328     | 0.03657   |
+| 1    | 0.03500   | 0.03134     | 0.02985   |
 
-| Seed | open CW | closed CW | gate_only CW | two_stage_no_res CW | two_stage_with_res CW |
-|------|---------|-----------|--------------|---------------------|-----------------------|
-|      |         |           |              |                     |                       |
+### Mean Metrics
 
-### Medel
+- Mean CW-rate (open_loop): **0.03750**
+- Mean CW-rate (closed_loop): **0.03731**
+- Mean CW-rate (gate_only): **0.03321**
+- Mean accuracy (open_loop): **0.77025**
+- Mean accuracy (closed_loop): **0.74665**
+- Mean accuracy (gate_only): **0.76755**
+- Mean coverage (closed_loop): **0.67**
+- Mean coverage (gate_only): **0.67**
 
-- open_loop CW:
-- closed_loop CW:
-- gate_only CW:
-- two_stage_no_residual CW:
-- two_stage_with_residual CW:
+### Seed-Level Directionality
+
+- Gate-only CW better than open-loop: **2/2 seeds**
+- Closed-loop CW better than open-loop: **1/2 seeds**
+- Closed-loop CW worse than open-loop: **1/2 seeds**
 
 ---
 
-## Tolkning
+## Interpretation
 
-_Fylls i efter körning._
+With the currently available artifact, gate-only is the most stable CW reducer. Closed-loop appears mixed under the same coverage level, with one improvement and one degradation versus open-loop. Accuracy is also stronger for gate-only than closed-loop in this 2-seed run.
+
+Because two-stage outputs are missing in this exported file, the hierarchical hidden-gate ablation itself is not yet complete in this record.
 
 ---
 
-## Slutsats
+## Provisional Conclusion
 
-_Fylls i efter körning._
+Current evidence supports **gate-only** as the best-performing mode for CW control under the observed setup. A final exp_011 conclusion requires a results artifact that includes `two_stage_no_residual` and `two_stage_with_residual` for direct comparison.

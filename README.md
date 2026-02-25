@@ -16,6 +16,11 @@
 
 Use `base76-research-lab/cognos` for all new development, issues, and citations.
 
+## Start in Colab
+
+- Direct guide: [exp_009 Colab quickstart](experiments/exp_009_closed_loop_gate/COLAB_QUICKSTART.md)
+- Main experiment folder: `experiments/exp_009_closed_loop_gate/`
+
 ---
 
 ## 🎯 What is CognOS?

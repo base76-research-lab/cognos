@@ -1,0 +1,12 @@
+hidden_dim: 256
+n_streams: 4
+n_classes: 10
+batch_size: 128
+epochs: 5
+eval_n: 1000
+seeds: [0]
+tau_quantile: 0.67
+cw_threshold: 0.80
+n_pmax_bins: 5
+data_dir: /content/data/cifar10
+results_dir: /content/results/exp_010_smoke

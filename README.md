@@ -20,9 +20,14 @@ Use `base76-research-lab/cognos` for all new development, issues, and citations.
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/base76-research-lab/cognos/blob/main/experiments/exp_009_closed_loop_gate/exp_009_colab.ipynb)
 
+[![Open In Colab (exp_010)](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/base76-research-lab/cognos/blob/main/experiments/exp_010_cifar10_conv_mhc/exp_010_colab.ipynb)
+
 - One-click notebook: [exp_009_colab.ipynb](experiments/exp_009_closed_loop_gate/exp_009_colab.ipynb)
 - Direct guide: [exp_009 Colab quickstart](experiments/exp_009_closed_loop_gate/COLAB_QUICKSTART.md)
 - Main experiment folder: `experiments/exp_009_closed_loop_gate/`
+- One-click notebook: [exp_010_colab.ipynb](experiments/exp_010_cifar10_conv_mhc/exp_010_colab.ipynb)
+- Direct guide: [exp_010 Colab quickstart](experiments/exp_010_cifar10_conv_mhc/COLAB_QUICKSTART.md)
+- Main experiment folder: `experiments/exp_010_cifar10_conv_mhc/`
 
 ---
 

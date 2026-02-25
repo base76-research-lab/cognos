@@ -1,6 +1,6 @@
 # exp_009 — Findings: Closed-loop epistemic gate
 
-**Datum:** 2026-02-24
+**Datum:** 2026-02-24 (uppdaterad 2026-02-25)
 **Researcher:** Björn Wikström
 **Föregående:** exp_008 (P1+P2 verifierade, r = +0.208, −21% CW vid gate_only)
 
@@ -49,12 +49,46 @@ i beslutskvalitet utöver vad gate-mätningen ensam ger?
 
 ---
 
+## Replikationskörning (Colab Pro, 2026-02-25)
+
+Miljö: Google Colab Pro (GPU), `mode=all`, `tau_q=0.67`, 5 seeds.
+
+### Per seed
+
+| Seed | open_loop acc | open_loop CW | closed_loop acc | closed_loop CW | gate_only acc | gate_only CW |
+|------|--------------|--------------|-----------------|----------------|---------------|--------------|
+| 0    | 0.9655       | 0.01100      | 0.9657          | 0.00970        | 0.9784        | 0.00746      |
+| 1    | 0.9670       | 0.01200      | 0.9709          | 0.00970        | 0.9657        | 0.01343      |
+| 2    | 0.9735       | 0.00750      | 0.9776          | 0.00896        | 0.9806        | 0.00821      |
+| 3    | 0.9660       | 0.01050      | 0.9627          | 0.01045        | 0.9701        | 0.00821      |
+| 4    | 0.9610       | 0.01450      | 0.9672          | 0.01493        | 0.9694        | 0.01269      |
+| **Medel** | **0.9666** | **0.01110** | **0.9688** | **0.01075** | **0.9728** | **0.01000** |
+
+### Effektstorlek (CW-rate)
+
+- **closed_loop vs open_loop:** 0.01075 vs 0.01110 → **−3.2%** relativ CW-reduktion
+- **gate_only vs open_loop:** 0.01000 vs 0.01110 → **−9.9%** relativ CW-reduktion
+- **coverage:** 0.67 i gate-betingelser (stabilt över seeds)
+
+### Tolkning av replikationen
+
+- Resultatet går i samma riktning som tidigare (gate hjälper), men med **svagare closed-loop-effekt** än 2026-02-24-körningen.
+- `gate_only` är fortfarande den tydligaste förbättringen i denna replikation.
+- Seed-varians kvarstår, vilket stärker bedömningen att **P3 ännu inte är robust verifierad** på MNIST.
+
+---
+
 ## Nyckelresultat
+
+### Samlad bedömning efter två körningar (2026-02-24 + 2026-02-25)
+
+Closed-loop visar återkommande svag förbättringstendens mot open-loop, men effektstorlek och seed-stabilitet varierar mellan körningar.
+Detta räcker inte för en stark P3-konklusion. Gate-signalen i sig (särskilt gate_only) framstår fortsatt som den mest robusta delen av resultatet.
 
 ### P3 — EJ VERIFIERAD (på MNIST)
 
-**closed_loop CW = 0.01000 ± 0.00180 vs open_loop 0.01090 ± 0.00086**
-→ −8.3% relativ CW-reduktion, men **hög varians och inkonsistent** över seeds
+**closed_loop CW förbättras svagt mot open_loop i båda körningarna**
+(-8.3% i 2026-02-24, -3.2% i 2026-02-25), men effekten är **variabel och inkonsistent** över seeds
 (seed 0 och 3 är sämre i closed_loop än open_loop).
 
 P3-prediktionen — att Layer2 tillför mätbar epistemic förbättring utöver gaten —
@@ -146,7 +180,7 @@ Den svaga positiva tendensen är konsistent med P1-mekanismen.
 
 **exp_009 verifierar gate_only-resultaten från exp_008 (−20.6% CW, replikering) ✓**
 
-**P3 (closed_loop Layer1 → Gate → Layer2) är EJ verifierad på MNIST.**
+**P3 (closed_loop Layer1 → Gate → Layer2) är ännu EJ robust verifierad på MNIST.**
 
 Den mekanistiska insikten är central:
 

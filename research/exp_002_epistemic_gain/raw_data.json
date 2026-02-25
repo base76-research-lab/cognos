@@ -1,0 +1,233 @@
+[
+  {
+    "question_id": 1,
+    "question": "Should I use microservices or monolith for a startup MVP?",
+    "type": "technical_decision",
+    "ground_truth": "Modular monolith as compromise",
+    "baseline": {
+      "chosen_label": "C",
+      "chosen_text": "Modular monolith as compromise",
+      "confidence": 0.85,
+      "rationale": "A modular monolith balances simplicity for a small team and short timeline while allowing future flexibility if scaling needs become clearer.",
+      "correct": true
+    },
+    "cognos": {
+      "final_answer": "Depends on specific requirements",
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": false
+    }
+  },
+  {
+    "question_id": 2,
+    "question": "When should I optimize code performance?",
+    "type": "engineering_judgment",
+    "ground_truth": "Only when there's a measured problem",
+    "baseline": {
+      "chosen_label": "B",
+      "chosen_text": "Only when there's a measured problem",
+      "confidence": 0.9,
+      "rationale": "Premature optimization can waste time and reduce code readability without measurable benefits, so optimization should only occur after profiling identifies actual bottlenecks.",
+      "correct": true
+    },
+    "cognos": {
+      "final_answer": "Only when there's a measured problem",
+      "confidence": 0.9994,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 3,
+    "question": "Is this research hypothesis falsifiable?",
+    "type": "methodology",
+    "ground_truth": "Partially - depends on operationalization of terms",
+    "baseline": {
+      "chosen_label": "D",
+      "chosen_text": "Unclear without more detail",
+      "confidence": 0.7,
+      "rationale": "Without knowing the specific research hypothesis and how its key terms are defined or measured, falsifiability cannot be definitively assessed.",
+      "correct": false
+    },
+    "cognos": {
+      "final_answer": "Unclear without more detail",
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": false
+    }
+  },
+  {
+    "question_id": 4,
+    "question": "What evidence standard should we use for policy change?",
+    "type": "evidence_threshold",
+    "ground_truth": "Depends on cost-benefit of action vs inaction",
+    "baseline": {
+      "chosen_label": "D",
+      "chosen_text": "Depends on cost-benefit of action vs inaction",
+      "confidence": 0.95,
+      "rationale": "Climate policy decisions should balance the potential costs of action versus inaction, given the high stakes and uncertainty of long-term effects.",
+      "correct": true
+    },
+    "cognos": {
+      "final_answer": "Depends on cost-benefit of action vs inaction",
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 5,
+    "question": "Should I take statins for slightly elevated cholesterol?",
+    "type": "medical_decision",
+    "ground_truth": "Depends on overall cardiovascular risk score",
+    "baseline": {
+      "chosen_label": "C",
+      "chosen_text": "Depends on overall cardiovascular risk score",
+      "confidence": 0.9,
+      "rationale": "The decision to take statins should be based on an individualized assessment of overall cardiovascular risk, not just LDL level.",
+      "correct": true
+    },
+    "cognos": {
+      "final_answer": "Depends on overall cardiovascular risk score",
+      "confidence": 0.9994,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 6,
+    "question": "Should we pause AI development until safety is proven?",
+    "type": "ai_policy",
+    "ground_truth": "Question assumes safety can be 'proven'",
+    "baseline": {
+      "chosen_label": "D",
+      "chosen_text": "Question assumes safety can be 'proven'",
+      "confidence": 0.95,
+      "rationale": "The question presupposes that safety can be definitively \"proven,\" which is not a realistic or verifiable standard in complex, evolving systems like AI.",
+      "correct": true
+    },
+    "cognos": {
+      "final_answer": "Question assumes safety can be 'proven'",
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 7,
+    "question": "Is AI alignment research more important than capability research?",
+    "type": "ai_strategy",
+    "ground_truth": "Depends on timelines and risk estimates",
+    "baseline": {
+      "chosen_label": "D",
+      "chosen_text": "Depends on timelines and risk estimates",
+      "confidence": 0.95,
+      "rationale": "The relative importance of AI alignment versus capability research hinges on assumptions about AI timelines, risk levels, and the potential consequences of misalignment.",
+      "correct": true
+    },
+    "cognos": {
+      "final_answer": "Depends on timelines and risk estimates",
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 8,
+    "question": "Should we pivot our product based on one major customer request?",
+    "type": "product_strategy",
+    "ground_truth": "Depends on strategic positioning and market analysis",
+    "baseline": {
+      "chosen_label": "C",
+      "chosen_text": "Negotiate compromise",
+      "confidence": 0.8,
+      "rationale": "A compromise balances revenue retention with long-term vision while mitigating risk of over-reliance on one customer.",
+      "correct": false
+    },
+    "cognos": {
+      "final_answer": "Depends on strategic positioning and market analysis",
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 9,
+    "question": "Is it ethical to use AI for hiring decisions?",
+    "type": "applied_ethics",
+    "ground_truth": "Question conflates multiple ethical issues",
+    "baseline": {
+      "chosen_label": "C",
+      "chosen_text": "Depends on transparency and oversight",
+      "confidence": 0.95,
+      "rationale": "The ethics of AI in hiring hinge on whether the system is designed with transparency, accountability, and continuous oversight to mitigate bias.",
+      "correct": false
+    },
+    "cognos": {
+      "final_answer": "Depends on transparency and oversight",
+      "confidence": 0.9994,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": false
+    }
+  },
+  {
+    "question_id": 10,
+    "question": "Should we prioritize economic growth or environmental protection?",
+    "type": "policy_tradeoff",
+    "ground_truth": "False dichotomy - sustainable growth exists",
+    "baseline": {
+      "chosen_label": "D",
+      "chosen_text": "False dichotomy - sustainable growth exists",
+      "confidence": 0.95,
+      "rationale": "The question presents a false dichotomy, as economic growth and environmental protection can coexist through sustainable practices and policies.",
+      "correct": true
+    },
+    "cognos": {
+      "final_answer": "False dichotomy - sustainable growth exists",
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "convergence_reason": "Decision reached: auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 11,
+    "question": "Does correlation between A and B mean A causes B?",
+    "type": "causal_inference",
+    "ground_truth": "Depends on study design and confounders",
+    "baseline": {
+      "chosen_label": "D",
+      "chosen_text": "Depends on study design and confounders",
+      "confidence": 0.95,
+      "rationale": "Correlation alone does not establish causation, but the possibility depends on study design, controlling for confounders, and additional evidence.",
+      "correct": true
+    },
+    "cognos": {
+      "final_answer": "Yes, high correlation implies causation",
+      "confidence": 0.0,
+      "meta_depth": 1,
+      "converged": true,
+      "convergence_reason": "No further meta-recursion possible",
+      "correct": false
+    }
+  }
+]

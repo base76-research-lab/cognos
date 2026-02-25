@@ -1,0 +1,162 @@
+[
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "neutral",
+    "sample": 0,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial security and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "neutral",
+    "sample": 1,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial readiness and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "uncertainty_primed",
+    "sample": 0,
+    "raw": "CHOICE: 65\nCONFIDENCE: 0.6\nRATIONALE: Varies by country, health, and policy.",
+    "choice": "65",
+    "confidence": 0.6
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "uncertainty_primed",
+    "sample": 1,
+    "raw": "CHOICE: 65-70\nCONFIDENCE: 0.6\nRATIONALE: Varies by country, health, and finances.",
+    "choice": "65-70",
+    "confidence": 0.6
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "adversarial",
+    "sample": 0,
+    "raw": "CHOICE: 65\nCONFIDENCE: 0.6\nRATIONALE: Varies by country, policy, and individual circumstances.",
+    "choice": "65",
+    "confidence": 0.6
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "adversarial",
+    "sample": 1,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.6\nRATIONALE: Varies by country and individual circumstances.",
+    "choice": "65-67",
+    "confidence": 0.6
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "binary",
+    "sample": 0,
+    "raw": "CHOICE: No\nCONFIDENCE: 0.8\nRATIONALE: Varies by individual circumstances.",
+    "choice": "No",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "binary",
+    "sample": 1,
+    "raw": "CHOICE: No\nCONFIDENCE: 0.8\nRATIONALE: Varies by person, finances, and health.",
+    "choice": "No",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "narrative",
+    "sample": 0,
+    "raw": "CHOICE: 67\nCONFIDENCE: 0.8\nRATIONALE: Balances workforce needs with life expectancy.",
+    "choice": "67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "prompt_type": "narrative",
+    "sample": 1,
+    "raw": "CHOICE: 67\nCONFIDENCE: 0.8\nRATIONALE: Balances workforce needs with life expectancy.",
+    "choice": "67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "neutral",
+    "sample": 0,
+    "raw": "CHOICE: 67\nCONFIDENCE: 0.8\nRATIONALE: The optimal retirement age varies by individual, but generally, 67 is considered suitable, allowing for a balance of health, finances, and personal fulfillment.",
+    "choice": "67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "neutral",
+    "sample": 1,
+    "raw": "CHOICE: 67-70 years old\nCONFIDENCE: 0.8\nRATIONALE: Studies suggest that this age range balances health, finances, and social engagement for optimal retirement experience and cognitive well-being.",
+    "choice": "67-70 years old",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "uncertainty_primed",
+    "sample": 0,
+    "raw": "CHOICE: 67-70 years old\nCONFIDENCE: 0.8\nRATIONALE: A balance between health, social security benefits, and economic stability, considering life expectancy and pension system dynamics.",
+    "choice": "67-70 years old",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "uncertainty_primed",
+    "sample": 1,
+    "raw": "CHOICE: 65-70 years old\nCONFIDENCE: 0.6\nRATIONALE: Most research suggests that retiring between 65 and 70 allows for optimal health, financial stability, and social engagement.",
+    "choice": "65-70 years old",
+    "confidence": 0.6
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "adversarial",
+    "sample": 0,
+    "raw": "CHOICE: 65 \nCONFIDENCE: 0.8\nRATIONALE: The Social Security Act in the US and other countries often set 65 as the standard retirement age, but optimal age varies by individual and context.",
+    "choice": "65",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "adversarial",
+    "sample": 1,
+    "raw": "CHOICE: 65-67 years old\nCONFIDENCE: 0.6\nRATIONALE: A commonly cited range, but varies by country, individual circumstances, and economic models, including life expectancy, health, and labor market conditions.",
+    "choice": "65-67 years old",
+    "confidence": 0.6
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "binary",
+    "sample": 0,
+    "raw": "CHOICE: No\nCONFIDENCE: 0.8\nRATIONALE: Optimal retirement age varies by individual, health, finances, and goals; 65 is a common benchmark but not universally applicable.",
+    "choice": "No",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "binary",
+    "sample": 1,
+    "raw": "CHOICE: No\nCONFIDENCE: 0.8\nRATIONALE: The optimal retirement age varies depending on individual circumstances, including health, financial readiness, and personal goals, making 65 a general guideline rather than a one-size-fits-all solution.",
+    "choice": "No",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "narrative",
+    "sample": 0,
+    "raw": "CHOICE: 67\nCONFIDENCE: 0.8\nRATIONALE: The optimal retirement age balances economic productivity, pension fund sustainability, and individual well-being, typically aligning with life expectancy and social security system requirements.",
+    "choice": "67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "prompt_type": "narrative",
+    "sample": 1,
+    "raw": "CHOICE: 67\nCONFIDENCE: 0.7\nRATIONALE: The optimal retirement age is debated among economists, but 67 is a commonly cited age, allowing for full pension benefits while balancing labor market needs and social security sustainability.",
+    "choice": "67",
+    "confidence": 0.7
+  }
+]

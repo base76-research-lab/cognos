@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cognos-ai"
+version = "0.4.0"
+description = "Reasoning layer for AI agents: confidence-calibrated decision gating"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [{name = "Björn Wikström", email = "bjorn@homelab.se"}]
+keywords = ["ai", "reasoning", "reasoning-layer", "agents", "confidence", "uncertainty", "decision-gating", "metacognition"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = ["numpy>=1.20.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=6.0", "black>=21.0", "flake8>=3.9"]
+
+[project.urls]
+Homepage = "https://github.com/Applied-Ai-Philosophy/cognos"
+Repository = "https://github.com/Applied-Ai-Philosophy/cognos.git"

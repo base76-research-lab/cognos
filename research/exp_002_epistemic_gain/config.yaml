@@ -1,0 +1,179 @@
+name: "Epistemic Gain vs Baseline"
+description: "Measure if CognOS provides practical improvement over direct LLM query"
+experiment_type: "epistemic_gain"
+n_questions: 30
+n_iterations: 10  # Per question
+max_depth: 3
+convergence_threshold: 0.05
+
+# Metrics to compute
+metrics:
+  - clarity_score
+  - actionability_score
+  - hallucination_detection_rate
+  - confidence_calibration_error
+  - delta_vs_baseline  # For each metric
+
+# Question bank: practical questions where epistemic quality matters
+questions:
+  # Technical decisions
+  - question: "Should I use microservices or monolith for a startup MVP?"
+    type: "technical_decision"
+    context: "Team of 3 developers, 6-month timeline, uncertain scaling needs"
+    alternatives:
+      - "Microservices for flexibility"
+      - "Monolith for simplicity"
+      - "Modular monolith as compromise"
+      - "Depends on specific requirements"
+    ground_truth: "Modular monolith as compromise"
+
+  - question: "When should I optimize code performance?"
+    type: "engineering_judgment"
+    alternatives:
+      - "Always optimize early"
+      - "Only when there's a measured problem"
+      - "Optimize critical paths from start"
+      - "Depends on project constraints"
+    ground_truth: "Only when there's a measured problem"
+
+  # Research methodology
+  - question: "Is this research hypothesis falsifiable?"
+    hypothesis: "Consciousness emerges when integrated information exceeds threshold φ"
+    type: "methodology"
+    alternatives:
+      - "Yes, clearly testable"
+      - "No, unfalsifiable"
+      - "Partially - depends on operationalization of terms"
+      - "Unclear without more detail"
+    ground_truth: "Partially - depends on operationalization of terms"
+
+  - question: "What evidence standard should we use for policy change?"
+    type: "evidence_threshold"
+    context: "Climate policy with uncertain long-term effects"
+    alternatives:
+      - "Preponderance of evidence (>50%)"
+      - "Clear and convincing (>70%)"
+      - "Beyond reasonable doubt (>95%)"
+      - "Depends on cost-benefit of action vs inaction"
+    ground_truth: "Depends on cost-benefit of action vs inaction"
+
+  # Medical/health decisions
+  - question: "Should I take statins for slightly elevated cholesterol?"
+    type: "medical_decision"
+    context: "45 years old, no heart disease history, LDL 150 mg/dL"
+    alternatives:
+      - "Yes, prevent future risk"
+      - "No, try lifestyle changes first"
+      - "Depends on overall cardiovascular risk score"
+      - "Insufficient information"
+    ground_truth: "Depends on overall cardiovascular risk score"
+
+  # AI safety
+  - question: "Should we pause AI development until safety is proven?"
+    type: "ai_policy"
+    alternatives:
+      - "Yes, safety first"
+      - "No, progress is important"
+      - "Depends on capability level"
+      - "Question assumes safety can be 'proven'"
+    ground_truth: "Question assumes safety can be 'proven'"
+
+  - question: "Is AI alignment research more important than capability research?"
+    type: "ai_strategy"
+    alternatives:
+      - "Yes"
+      - "No"
+      - "Both are important"
+      - "Depends on timelines and risk estimates"
+    ground_truth: "Depends on timelines and risk estimates"
+
+  # Business decisions
+  - question: "Should we pivot our product based on one major customer request?"
+    type: "product_strategy"
+    context: "Customer represents 40% of revenue but request conflicts with vision"
+    alternatives:
+      - "Yes, customer is always right"
+      - "No, stick to vision"
+      - "Negotiate compromise"
+      - "Depends on strategic positioning and market analysis"
+    ground_truth: "Depends on strategic positioning and market analysis"
+
+  # Ethical dilemmas
+  - question: "Is it ethical to use AI for hiring decisions?"
+    type: "applied_ethics"
+    alternatives:
+      - "Yes, removes human bias"
+      - "No, introduces algorithmic bias"
+      - "Depends on transparency and oversight"
+      - "Question conflates multiple ethical issues"
+    ground_truth: "Question conflates multiple ethical issues"
+
+  - question: "Should we prioritize economic growth or environmental protection?"
+    type: "policy_tradeoff"
+    alternatives:
+      - "Economic growth"
+      - "Environmental protection"
+      - "Balance both"
+      - "False dichotomy - sustainable growth exists"
+    ground_truth: "False dichotomy - sustainable growth exists"
+
+  # Scientific reasoning
+  - question: "Does correlation between A and B mean A causes B?"
+    type: "causal_inference"
+    context: "Strong correlation (r=0.85, p<0.001) in observational study"
+    alternatives:
+      - "Yes, high correlation implies causation"
+      - "No, correlation never implies causation"
+      - "Possibly, but need more evidence"
+      - "Depends on study design and confounders"
+    ground_truth: "Depends on study design and confounders"
+
+  # Add more questions to reach 30 total
+  # (Template shows variety - expand with similar patterns)
+
+# Baseline configuration
+baseline:
+  prompt_template: |
+    Answer the following question clearly and actionably:
+    
+    Question: {question}
+    {context}
+    
+    Alternatives:
+    {alternatives}
+    
+    Provide your answer with explanation.
+  
+  temperature: 0.7
+  max_tokens: 500
+
+# CognOS configuration (uses full pipeline)
+cognos:
+  n_samples: 5
+  max_depth: 3
+  convergence_threshold: 0.05
+
+# Scoring settings
+scoring:
+  clarity_scale: [1, 2, 3, 4, 5]
+  actionability_scale: [1, 2, 3, 4, 5]
+  hallucination_threshold: 0.8  # Confidence > 0.8 but wrong = hallucination
+  
+  # Optional: use LLM-as-judge for automated scoring
+  use_llm_judge: true
+  judge_model: "mixtral-8x7b-32768"
+  judge_prompt: |
+    Rate the following answer on clarity (1-5) and actionability (1-5):
+    
+    Question: {question}
+    Answer: {answer}
+    
+    Clarity: [score 1-5]
+    Actionability: [score 1-5]
+    Justification: [brief explanation]
+
+# Output settings
+output:
+  save_raw: true
+  save_both_outputs: true  # CognOS + baseline side-by-side
+  save_scores: true

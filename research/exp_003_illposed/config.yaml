@@ -1,0 +1,227 @@
+name: "Ill-Posed Question Detection"
+description: "Test if CognOS can identify and reframe badly formed questions"
+experiment_type: "ill_posed_detection"
+n_questions: 40
+n_iterations: 5  # Per question
+max_depth: 3
+convergence_threshold: 0.05
+
+# Metrics to compute
+metrics:
+  - detection_accuracy
+  - reframing_success_rate
+  - false_positive_rate
+  - avg_divergence_on_illposed
+  - comparison_with_baseline
+
+# Question bank: deliberately ill-posed questions
+questions:
+  # Normative without context
+  - question: "Is happiness better than success?"
+    type: "normative_vague"
+    ill_posed_reason: "Assumes happiness and success are distinct and comparable"
+    correct_response_type: "clarification_needed"
+    ground_truth: "Question is ill-posed - needs definition of terms and context"
+
+  - question: "Should we use AI in healthcare?"
+    type: "normative_underspecified"
+    ill_posed_reason: "Missing: what use case, what risks, what benefits"
+    correct_response_type: "clarification_needed"
+    ground_truth: "Question too broad - needs specific use case"
+
+  - question: "Is censorship ever justified?"
+    type: "normative_absolute"
+    ill_posed_reason: "Assumes binary answer to complex ethical question"
+    correct_response_type: "reframe"
+    ground_truth: "Depends on definition of censorship and specific context"
+
+  # Vague predicates (sorites family)
+  - question: "Is a person with 10,000 hairs bald?"
+    type: "sorites_paradox"
+    ill_posed_reason: "'Bald' is a vague predicate without sharp boundary"
+    correct_response_type: "identify_vagueness"
+    ground_truth: "Question reveals vagueness of 'bald' - no determinate answer"
+
+  - question: "At what point does a pile of sand stop being a pile?"
+    type: "sorites_paradox"
+    ill_posed_reason: "'Pile' has no precise boundary"
+    correct_response_type: "identify_vagueness"
+    ground_truth: "Vague predicate problem - no sharp cutoff exists"
+
+  - question: "When does a fetus become a person?"
+    type: "sorites_ethical"
+    ill_posed_reason: "'Person' is contested concept without agreed definition"
+    correct_response_type: "identify_conceptual_dispute"
+    ground_truth: "Depends on definition of 'person' - philosophical/legal dispute"
+
+  # False dichotomies
+  - question: "Should we prioritize freedom or security?"
+    type: "false_dichotomy"
+    ill_posed_reason: "Assumes freedom and security are mutually exclusive"
+    correct_response_type: "reject_dichotomy"
+    ground_truth: "False dichotomy - both can coexist with tradeoffs"
+
+  - question: "Is climate change caused by humans or natural cycles?"
+    type: "false_dichotomy"
+    ill_posed_reason: "Assumes single cause when both factors interact"
+    correct_response_type: "reject_dichotomy"
+    ground_truth: "False dichotomy - both human and natural factors contribute"
+
+  # Category errors
+  - question: "What color is justice?"
+    type: "category_error"
+    ill_posed_reason: "Justice is abstract concept, not physical object with color"
+    correct_response_type: "identify_category_error"
+    ground_truth: "Category error - justice is not the kind of thing that has color"
+
+  - question: "How heavy is an idea?"
+    type: "category_error"
+    ill_posed_reason: "Ideas are mental, not physical objects with weight"
+    correct_response_type: "identify_category_error"
+    ground_truth: "Category error - ideas don't have physical weight"
+
+  # Self-referential paradoxes
+  - question: "Is this statement false?"
+    type: "liar_paradox"
+    ill_posed_reason: "Self-referential statement leads to logical contradiction"
+    correct_response_type: "identify_paradox"
+    ground_truth: "Liar paradox - statement is self-contradictory"
+
+  - question: "Can an omnipotent being create a stone too heavy to lift?"
+    type: "logical_paradox"
+    ill_posed_reason: "Omnipotence paradox - concept is self-contradictory"
+    correct_response_type: "identify_paradox"
+    ground_truth: "Logical paradox - reveals contradiction in 'omnipotence' concept"
+
+  # Loaded questions
+  - question: "Have you stopped lying to your colleagues?"
+    type: "loaded_question"
+    ill_posed_reason: "Presupposes lying occurred (false presupposition)"
+    correct_response_type: "reject_presupposition"
+    ground_truth: "Loaded question - presupposes lying without establishing it"
+
+  - question: "Why is socialism always a failure?"
+    type: "loaded_question"
+    ill_posed_reason: "Presupposes universal failure (empirically contested)"
+    correct_response_type: "reject_presupposition"
+    ground_truth: "Loaded question - presupposes outcome without evidence"
+
+  # Ambiguous reference
+  - question: "Is it safe?"
+    type: "missing_referent"
+    ill_posed_reason: "Unclear what 'it' refers to and what 'safe' means"
+    correct_response_type: "request_clarification"
+    ground_truth: "Cannot answer - missing referent and context"
+
+  - question: "Should we do it?"
+    type: "missing_referent"
+    ill_posed_reason: "Unclear what action is being proposed"
+    correct_response_type: "request_clarification"
+    ground_truth: "Cannot answer - missing information about proposed action"
+
+  # Undefined terms
+  - question: "Is fleem greater than blork?"
+    type: "undefined_terms"
+    ill_posed_reason: "'Fleem' and 'blork' are undefined"
+    correct_response_type: "request_definitions"
+    ground_truth: "Cannot answer - undefined terms"
+
+  - question: "How many quibbles are in a flarn?"
+    type: "undefined_terms"
+    ill_posed_reason: "Made-up units without definition"
+    correct_response_type: "request_definitions"
+    ground_truth: "Cannot answer - undefined units"
+
+  # Temporal/scope ambiguity
+  - question: "Is technology good?"
+    type: "overly_general"
+    ill_posed_reason: "Which technology? Good for whom? In what context?"
+    correct_response_type: "request_scope"
+    ground_truth: "Too general - needs specific technology and evaluation criteria"
+
+  - question: "Does education work?"
+    type: "overly_general"
+    ill_posed_reason: "What type of education? For what goal? Measured how?"
+    correct_response_type: "request_scope"
+    ground_truth: "Too general - needs specification of type and success criteria"
+
+  # Empirically unanswerable
+  - question: "What will the stock market do tomorrow?"
+    type: "prediction_impossible"
+    ill_posed_reason: "Market is stochastic - deterministic prediction impossible"
+    correct_response_type: "acknowledge_uncertainty"
+    ground_truth: "Cannot predict with certainty - only probabilistic estimates possible"
+
+  - question: "What are you thinking right now?"
+    type: "private_access"
+    ill_posed_reason: "LLM doesn't have phenomenal consciousness or private thoughts"
+    correct_response_type: "reject_assumption"
+    ground_truth: "Assumes LLM has private mental states (questionable assumption)"
+
+  # Well-formed control questions (should NOT be flagged)
+  - question: "What is the capital of France?"
+    type: "control_wellformed"
+    ill_posed_reason: null
+    correct_response_type: "direct_answer"
+    ground_truth: "Paris"
+    is_control: true
+
+  - question: "Is 10 greater than 5?"
+    type: "control_wellformed"
+    ill_posed_reason: null
+    correct_response_type: "direct_answer"
+    ground_truth: "Yes"
+    is_control: true
+
+  - question: "What is H2O commonly known as?"
+    type: "control_wellformed"
+    ill_posed_reason: null
+    correct_response_type: "direct_answer"
+    ground_truth: "Water"
+    is_control: true
+
+  # Add more to reach 40 total (mix of ill-posed and control)
+
+# Detection criteria
+detection:
+  divergence_threshold: 0.20  # Higher than normal - ill-posed causes more divergence
+  assumption_extraction_required: true
+  reframing_required: true
+  
+  # Classification categories
+  categories:
+    - "wellformed"
+    - "underspecified"
+    - "vague_predicate"
+    - "false_dichotomy"
+    - "category_error"
+    - "paradox"
+    - "loaded_question"
+    - "missing_context"
+    - "undefined_terms"
+    - "overly_general"
+
+# Baseline configuration (direct answer without detection)
+baseline:
+  prompt_template: |
+    Answer the following question:
+    
+    {question}
+    
+    Provide your answer.
+  
+  temperature: 0.7
+
+# Scoring
+scoring:
+  detection_correct: 1.0  # Point for correct identification
+  detection_incorrect: 0.0
+  false_positive_penalty: -0.5  # Penalty for flagging wellformed question
+  reframing_quality_scale: [1, 2, 3, 4, 5]  # If reframing attempted
+
+# Output settings
+output:
+  save_raw: true
+  save_detection_flags: true
+  save_reframing_attempts: true
+  save_false_positives: true

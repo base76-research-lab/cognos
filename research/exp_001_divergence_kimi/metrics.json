@@ -1,0 +1,11 @@
+{
+  "total_runs": 60,
+  "divergence_detected_rate": 0.0,
+  "synthesis_success_rate": 0.0,
+  "avg_convergence_depth": 0.0,
+  "convergence_depth_distribution": {
+    "min": 0,
+    "max": 0,
+    "median": 0
+  }
+}

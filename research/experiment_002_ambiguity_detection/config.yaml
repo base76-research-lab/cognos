@@ -1,0 +1,47 @@
+name: "Ambiguity Detection Challenge"
+description: "Test CognOS ability to detect ill-posed, ambiguous, or underspecified questions. Measures assumption extraction and appropriate refusal/clarification."
+question_type: "ambiguity_detection"
+n_iterations: 30
+max_depth: 3
+convergence_threshold: 0.05
+
+questions:
+  - question: "Is happiness better than sadness?"
+    alternatives:
+      - "Yes — happiness is objectively better"
+      - "No — sadness has value too"
+      - "The question is underspecified (better for what?)"
+    ground_truth: "The question is underspecified (better for what?)"
+    context: "Normative question with missing context."
+  
+  - question: "Should we deploy AI in healthcare?"
+    alternatives:
+      - "Yes — AI will improve outcomes"
+      - "No — AI is too risky"
+      - "The question lacks necessary specifications (which AI? which context?)"
+    ground_truth: "The question lacks necessary specifications (which AI? which context?)"
+    context: "Policy question missing scope and criteria."
+  
+  - question: "Is consciousness fundamental or emergent?"
+    alternatives:
+      - "Fundamental — consciousness is basic to reality"
+      - "Emergent — consciousness arises from complexity"
+      - "The question presupposes a false dichotomy"
+    ground_truth: "The question presupposes a false dichotomy"
+    context: "Philosophical question with contested framing."
+  
+  - question: "How many grains of sand make a heap?"
+    alternatives:
+      - "Exactly 1000 grains"
+      - "Around 10,000 grains"
+      - "The question is ill-posed (sorites paradox)"
+    ground_truth: "The question is ill-posed (sorites paradox)"
+    context: "Classical paradox — vague predicates."
+  
+  - question: "Is this AI system safe?"
+    alternatives:
+      - "Yes — it passed all tests"
+      - "No — it has vulnerabilities"
+      - "The question is underspecified (safe for whom? in what context?)"
+    ground_truth: "The question is underspecified (safe for whom? in what context?)"
+    context: "Safety question missing threat model and context."

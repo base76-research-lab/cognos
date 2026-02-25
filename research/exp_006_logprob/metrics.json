@@ -1,0 +1,38 @@
+{
+  "llama3.2:1b": {
+    "alignment_status": "RLHF-aligned",
+    "mean_choice_prob": 0.4012,
+    "mean_confidence_gap": 0.0316,
+    "choice_prob_by_determinacy": {
+      "0": 0.2834,
+      "1": 0.2344,
+      "2": 0.3598,
+      "3": 0.4134,
+      "4": 0.7152
+    }
+  },
+  "tinyllama": {
+    "alignment_status": "minimal alignment",
+    "mean_choice_prob": 0.1421,
+    "mean_confidence_gap": 0.5005,
+    "choice_prob_by_determinacy": {
+      "0": 0.1287,
+      "1": 0.1102,
+      "2": 0.1962,
+      "3": 0.132,
+      "4": 0.1432
+    }
+  },
+  "phi3:mini": {
+    "alignment_status": "RLHF-aligned",
+    "mean_choice_prob": 0.6269,
+    "mean_confidence_gap": 0.2435,
+    "choice_prob_by_determinacy": {
+      "0": 0.5922,
+      "1": 0.3783,
+      "2": 0.8088,
+      "3": 0.6952,
+      "4": 0.6597
+    }
+  }
+}

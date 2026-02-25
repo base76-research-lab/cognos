@@ -1,0 +1,47 @@
+name: "Complex Reasoning: Policy & Science"
+description: "Test CognOS on complex multi-stakeholder reasoning problems. Measures convergence quality, assumption detection, and reasoning depth."
+question_type: "complex_reasoning"
+n_iterations: 30
+max_depth: 4
+convergence_threshold: 0.05
+
+questions:
+  - question: "Should we prioritize theoretical rigor or practical applicability in AI safety research?"
+    alternatives:
+      - "Theoretical rigor first — ensure foundations are sound"
+      - "Practical applicability first — test in real contexts"
+      - "Balance both — integrate theory and practice iteratively"
+    ground_truth: "Balance both — integrate theory and practice iteratively"
+    context: "AI safety methodology question with epistemic/normative tradeoffs."
+  
+  - question: "What level of evidence should trigger a new medical treatment policy?"
+    alternatives:
+      - "Single well-designed RCT with positive results"
+      - "Multiple RCTs with consistent effects"
+      - "Meta-analysis with high effect size and low heterogeneity"
+    ground_truth: "Multiple RCTs with consistent effects"
+    context: "Evidence-based medicine: balancing speed of adoption vs. certainty."
+  
+  - question: "Is HYPOTHESIS_V02 (C = p × (1 - Ue - Ua)) falsifiable in its current form?"
+    alternatives:
+      - "Weakly falsifiable — lacks clear rejection thresholds"
+      - "Partially falsifiable but requires stricter operational criteria"
+      - "Strongly falsifiable with clear testable predictions"
+    ground_truth: "Partially falsifiable but requires stricter operational criteria"
+    context: "CognOS hypothesis: confidence formula with three uncertainty types."
+  
+  - question: "Should autonomous vehicles optimize for passenger safety or pedestrian safety when unavoidable conflict occurs?"
+    alternatives:
+      - "Passenger safety — driver's trust is essential"
+      - "Pedestrian safety — minimize total harm"
+      - "Equal weighting — treat all lives equally"
+    ground_truth: "Equal weighting — treat all lives equally"
+    context: "Trolley problem variant in AI ethics."
+  
+  - question: "When should AI governance move from voluntary guidelines to mandatory regulation?"
+    alternatives:
+      - "Now — establish rules before harm occurs"
+      - "After demonstrated harm — avoid premature regulation"
+      - "Tiered approach — mandatory for high-risk, voluntary for low-risk"
+    ground_truth: "Tiered approach — mandatory for high-risk, voluntary for low-risk"
+    context: "AI policy: regulatory timing and scope."

@@ -1,0 +1,326 @@
+[
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is 2+2?",
+    "determinacy_level": 0,
+    "sample": 0,
+    "raw": "CHOICE: 4\nCONFIDENCE: 1.0\nRATIONALE: Basic arithmetic operation.",
+    "choice": "4",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is 2+2?",
+    "determinacy_level": 0,
+    "sample": 1,
+    "raw": "CHOICE: 4\nCONFIDENCE: 1.0\nRATIONALE: Basic arithmetic operation.",
+    "choice": "4",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is the capital of France?",
+    "determinacy_level": 0,
+    "sample": 0,
+    "raw": "CHOICE: Paris\nCONFIDENCE: 1.0\nRATIONALE: Well-known historical fact.",
+    "choice": "Paris",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is the capital of France?",
+    "determinacy_level": 0,
+    "sample": 1,
+    "raw": "CHOICE: Paris\nCONFIDENCE: 1.0\nRATIONALE: Well-known historical fact.",
+    "choice": "Paris",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "How effective are antidepressants?",
+    "determinacy_level": 1,
+    "sample": 0,
+    "raw": "CHOICE: Moderately effective\nCONFIDENCE: 0.8\nRATIONALE: Variable success rates across patients and disorders.",
+    "choice": "Moderately effective",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "How effective are antidepressants?",
+    "determinacy_level": 1,
+    "sample": 1,
+    "raw": "CHOICE: Moderately effective\nCONFIDENCE: 0.8\nRATIONALE: Varied success rates across patients and disorders.",
+    "choice": "Moderately effective",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is the best diet?",
+    "determinacy_level": 2,
+    "sample": 0,
+    "raw": "CHOICE: Balanced diet\nCONFIDENCE: 0.9\nRATIONALE: Varied intake of nutrients supports overall health.",
+    "choice": "Balanced diet",
+    "confidence": 0.9
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is the best diet?",
+    "determinacy_level": 2,
+    "sample": 1,
+    "raw": "CHOICE: Balanced diet\nCONFIDENCE: 0.9\nRATIONALE: Varied intake of nutrients.",
+    "choice": "Balanced diet",
+    "confidence": 0.9
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is the optimal retirement age?",
+    "determinacy_level": 2,
+    "sample": 0,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial security and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is the optimal retirement age?",
+    "determinacy_level": 2,
+    "sample": 1,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial security and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "If a tree falls in a forest...",
+    "determinacy_level": 3,
+    "sample": 0,
+    "raw": "CHOICE: it makes a sound\nCONFIDENCE: 1.0\nRATIONALE: Sound waves occur regardless of observation.",
+    "choice": "it makes a sound",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "If a tree falls in a forest...",
+    "determinacy_level": 3,
+    "sample": 1,
+    "raw": "CHOICE: it makes a sound\nCONFIDENCE: 1.0\nRATIONALE: Sound waves occur regardless of observation.",
+    "choice": "it makes a sound",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "Is a heap still a heap?",
+    "determinacy_level": 3,
+    "sample": 0,
+    "raw": "CHOICE: Yes\nCONFIDENCE: 1.0\nRATIONALE: Definition unchanged.",
+    "choice": "Yes",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "Is a heap still a heap?",
+    "determinacy_level": 3,
+    "sample": 1,
+    "raw": "CHOICE: Yes\nCONFIDENCE: 1.0\nRATIONALE: Definition of a heap remains unchanged.",
+    "choice": "Yes",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is the meaning of life?",
+    "determinacy_level": 4,
+    "sample": 0,
+    "raw": "CHOICE: Finding happiness and fulfillment\nCONFIDENCE: 0.8\nRATIONALE: Subjective and personal interpretation varies.",
+    "choice": "Finding happiness and fulfillment",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "What is the meaning of life?",
+    "determinacy_level": 4,
+    "sample": 1,
+    "raw": "CHOICE: Finding purpose and happiness\nCONFIDENCE: 0.8\nRATIONALE: Subjective and personal interpretation.",
+    "choice": "Finding purpose and happiness",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "Can you prove you're not a simulation?",
+    "determinacy_level": 4,
+    "sample": 0,
+    "raw": "CHOICE: No\nCONFIDENCE: 0.5\nRATIONALE: Lack of evidence either way.",
+    "choice": "No",
+    "confidence": 0.5
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "question": "Can you prove you're not a simulation?",
+    "determinacy_level": 4,
+    "sample": 1,
+    "raw": "CHOICE: No\nCONFIDENCE: 0.5\nRATIONALE: Lack of evidence either way.",
+    "choice": "No",
+    "confidence": 0.5
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is 2+2?",
+    "determinacy_level": 0,
+    "sample": 0,
+    "raw": "CHOICE: 4\nCONFIDENCE: 1.0\nRATIONALE: Basic arithmetic operation, adding two units to two units results in four units.",
+    "choice": "4",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is 2+2?",
+    "determinacy_level": 0,
+    "sample": 1,
+    "raw": "CHOICE: 4\nCONFIDENCE: 1.0\nRATIONALE: Basic arithmetic fact, widely accepted and universally true.",
+    "choice": "4",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is the capital of France?",
+    "determinacy_level": 0,
+    "sample": 0,
+    "raw": "CHOICE: Paris\nCONFIDENCE: 1.0\nRATIONALE: Paris is widely recognized as the capital of France, having served as the country's center of government and culture for centuries.",
+    "choice": "Paris",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is the capital of France?",
+    "determinacy_level": 0,
+    "sample": 1,
+    "raw": "CHOICE: Paris\nCONFIDENCE: 1.0\nRATIONALE: Paris is widely recognized as the capital of France, serving as the country's center for politics, economy, and culture.",
+    "choice": "Paris",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "How effective are antidepressants?",
+    "determinacy_level": 1,
+    "sample": 0,
+    "raw": "CHOICE: Moderately effective\nCONFIDENCE: 0.8\nRATIONALE: Antidepressants show improved symptoms in 50-70% of patients, with significant benefits in reducing depressive symptoms and improving quality of life.",
+    "choice": "Moderately effective",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "How effective are antidepressants?",
+    "determinacy_level": 1,
+    "sample": 1,
+    "raw": "CHOICE: Moderately effective\nCONFIDENCE: 0.8\nRATIONALE: Antidepressants have shown significant improvement in depressive symptoms, but response rates vary between 40-60% of patients.",
+    "choice": "Moderately effective",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is the best diet?",
+    "determinacy_level": 2,
+    "sample": 0,
+    "raw": "CHOICE: Mediterranean diet\nCONFIDENCE: 0.8\nRATIONALE: Emphasizes whole grains, fruits, vegetables, and healthy fats, showing long-term health benefits and lower risk of chronic diseases.",
+    "choice": "Mediterranean diet",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is the best diet?",
+    "determinacy_level": 2,
+    "sample": 1,
+    "raw": "CHOICE: Mediterranean diet\nCONFIDENCE: 0.9\nRATIONALE: Emphasizing whole grains, fruits, vegetables, and healthy fats, this diet has been consistently linked to various health benefits and longevity in numerous studies.",
+    "choice": "Mediterranean diet",
+    "confidence": 0.9
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is the optimal retirement age?",
+    "determinacy_level": 2,
+    "sample": 0,
+    "raw": "CHOICE: 67 \nCONFIDENCE: 0.8\nRATIONALE: Based on life expectancy and financial sustainability, 67 is considered optimal for retirement age, balancing leisure and financial support.",
+    "choice": "67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is the optimal retirement age?",
+    "determinacy_level": 2,
+    "sample": 1,
+    "raw": "CHOICE: 65-70 years old\nCONFIDENCE: 0.8\nRATIONALE: This age range balances health, financial readiness, and social security benefits, allowing individuals to enjoy retirement while minimizing financial strain.",
+    "choice": "65-70 years old",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "If a tree falls in a forest...",
+    "determinacy_level": 3,
+    "sample": 0,
+    "raw": "CHOICE: Yes, it makes a sound.\nCONFIDENCE: 1.0\nRATIONALE: Sound is a pressure wave caused by vibrations, and tree falling creates such vibrations, thus producing sound.",
+    "choice": "Yes, it makes a sound.",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "If a tree falls in a forest...",
+    "determinacy_level": 3,
+    "sample": 1,
+    "raw": "CHOICE: It makes a sound.\nCONFIDENCE: 1.0\nRATIONALE: Sound is a mechanical wave that requires a physical medium, and air molecules would transmit the shockwave from the tree's fall.",
+    "choice": "It makes a sound.",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "Is a heap still a heap?",
+    "determinacy_level": 3,
+    "sample": 0,
+    "raw": "CHOICE: Yes\nCONFIDENCE: 0.9\nRATIONALE: A heap remains a valid heap after a single insertion or removal operation, maintaining its heap property.",
+    "choice": "Yes",
+    "confidence": 0.9
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "Is a heap still a heap?",
+    "determinacy_level": 3,
+    "sample": 1,
+    "raw": "CHOICE: Yes\nCONFIDENCE: 1.0\nRATIONALE: A heap maintains its heap property after a deletion or insertion operation, making it still a heap.",
+    "choice": "Yes",
+    "confidence": 1.0
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is the meaning of life?",
+    "determinacy_level": 4,
+    "sample": 0,
+    "raw": "CHOICE: Existence and purpose are subjective, varying among individuals and cultures.\nCONFIDENCE: 0.8\nRATIONALE: Philosophers and theologians have debated this question for centuries, with no definitive answer, highlighting the complexity and diversity of human experiences.",
+    "choice": "Existence and purpose are subjective, varying among individuals and cultures.",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "What is the meaning of life?",
+    "determinacy_level": 4,
+    "sample": 1,
+    "raw": "CHOICE: The pursuit of happiness and fulfillment through self-discovery, relationships, and personal growth.\nCONFIDENCE: 0.8\nRATIONALE: This answer reflects various philosophical and psychological theories, including Aristotle's concept of eudaimonia and the humanistic approach of Carl Rogers.",
+    "choice": "The pursuit of happiness and fulfillment through self-discovery, relationships, and personal growth.",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "Can you prove you're not a simulation?",
+    "determinacy_level": 4,
+    "sample": 0,
+    "raw": "CHOICE: No conclusive evidence\nCONFIDENCE: 0.0\nRATIONALE: Currently, there is no empirical data or experiment to distinguish a simulation from reality, making it undecidable.",
+    "choice": "No conclusive evidence",
+    "confidence": 0.0
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "question": "Can you prove you're not a simulation?",
+    "determinacy_level": 4,
+    "sample": 1,
+    "raw": "CHOICE: No conclusive evidence exists to prove it one way or the other.\nCONFIDENCE: 0.0\nRATIONALE: Lack of empirical data and scientific consensus regarding simulators and their capabilities.",
+    "choice": "No conclusive evidence exists to prove it one way or the other.",
+    "confidence": 0.0
+  }
+]

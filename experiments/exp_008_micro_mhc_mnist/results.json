@@ -1,0 +1,189 @@
+{
+  "exp": "exp_008",
+  "date": "2026-02-24",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "epochs": 5,
+  "n_eval": 2000,
+  "n_streams": 4,
+  "sinkhorn_iters": 20,
+  "mhc_r_rte_mean": 0.2080625608563423,
+  "mhc_r_rte_std": 0.07080609490298279,
+  "mhc_r_sdiv_mean": -0.2593523174524307,
+  "ctrl_r_sdiv_mean": -0.24023144841194152,
+  "p1_verdict": "\u2713 P1 ST\u00d6DS \u2014 Birkhoff-routing producerar korrekt tecken",
+  "per_seed": [
+    {
+      "seed": 0,
+      "condition": "mhc",
+      "acc": 0.9676,
+      "r_rte": 0.13932698965072632,
+      "p_rte": 3.91090965168317e-10,
+      "rs_rte": 0.1459789782994867,
+      "r_sdiv": -0.22269552946090698,
+      "p_sdiv": 6.782319985059034e-24,
+      "rs_sdiv": -0.34244436161109043,
+      "ratio_rte": 1.0665867328643799,
+      "ratio_sdiv": 0.7298954129219055
+    },
+    {
+      "seed": 1,
+      "condition": "mhc",
+      "acc": 0.9653,
+      "r_rte": 0.3108532428741455,
+      "p_rte": 0.0,
+      "rs_rte": 0.28104204876051214,
+      "r_sdiv": -0.3085058033466339,
+      "p_sdiv": 2.802596928649634e-45,
+      "rs_sdiv": -0.3713192713298178,
+      "ratio_rte": 1.0137859582901,
+      "ratio_sdiv": 0.9839456677436829
+    },
+    {
+      "seed": 2,
+      "condition": "mhc",
+      "acc": 0.9648,
+      "r_rte": 0.12400858849287033,
+      "p_rte": 2.638849494474016e-08,
+      "rs_rte": 0.16697028874257216,
+      "r_sdiv": -0.19711045920848846,
+      "p_sdiv": 5.739932415548873e-19,
+      "rs_sdiv": -0.3078381244595311,
+      "ratio_rte": 1.0163437128067017,
+      "ratio_sdiv": 0.8989869952201843
+    },
+    {
+      "seed": 3,
+      "condition": "mhc",
+      "acc": 0.9644,
+      "r_rte": 0.20602498948574066,
+      "p_rte": 1.3027909662983355e-20,
+      "rs_rte": 0.21167471074805572,
+      "r_sdiv": -0.24863499402999878,
+      "p_sdiv": 1.4687802289682675e-29,
+      "rs_sdiv": -0.360561924140481,
+      "ratio_rte": 1.0011801719665527,
+      "ratio_sdiv": 1.0714763402938843
+    },
+    {
+      "seed": 4,
+      "condition": "mhc",
+      "acc": 0.9646,
+      "r_rte": 0.26009899377822876,
+      "p_rte": 2.768378239883562e-32,
+      "rs_rte": 0.27341753655944734,
+      "r_sdiv": -0.3198148012161255,
+      "p_sdiv": 0.0,
+      "rs_sdiv": -0.5160819576010817,
+      "ratio_rte": 1.0121742486953735,
+      "ratio_sdiv": 1.094817042350769
+    },
+    {
+      "seed": 0,
+      "condition": "ctrl",
+      "acc": 0.9627,
+      "r_rte": NaN,
+      "p_rte": NaN,
+      "rs_rte": NaN,
+      "r_sdiv": -0.22908256947994232,
+      "p_sdiv": 3.1629533301827184e-25,
+      "rs_sdiv": -0.38019776544201556,
+      "ratio_rte": 0.9959949254989624,
+      "ratio_sdiv": 1.0746347904205322
+    },
+    {
+      "seed": 1,
+      "condition": "ctrl",
+      "acc": 0.9668,
+      "r_rte": NaN,
+      "p_rte": NaN,
+      "rs_rte": NaN,
+      "r_sdiv": -0.21819119155406952,
+      "p_sdiv": 5.568231497487688e-23,
+      "rs_sdiv": -0.3257391019347755,
+      "ratio_rte": 0.9959949254989624,
+      "ratio_sdiv": 1.0661519765853882
+    },
+    {
+      "seed": 2,
+      "condition": "ctrl",
+      "acc": 0.9608,
+      "r_rte": NaN,
+      "p_rte": NaN,
+      "rs_rte": NaN,
+      "r_sdiv": -0.22825752198696136,
+      "p_sdiv": 4.724663975958117e-25,
+      "rs_sdiv": -0.3950041767510442,
+      "ratio_rte": 0.9959949254989624,
+      "ratio_sdiv": 0.937735378742218
+    },
+    {
+      "seed": 3,
+      "condition": "ctrl",
+      "acc": 0.9637,
+      "r_rte": NaN,
+      "p_rte": NaN,
+      "rs_rte": NaN,
+      "r_sdiv": -0.24643026292324066,
+      "p_sdiv": 4.7340964980835605e-29,
+      "rs_sdiv": -0.4122422365605592,
+      "ratio_rte": 0.9959949254989624,
+      "ratio_sdiv": 0.989152193069458
+    },
+    {
+      "seed": 4,
+      "condition": "ctrl",
+      "acc": 0.9645,
+      "r_rte": NaN,
+      "p_rte": NaN,
+      "rs_rte": NaN,
+      "r_sdiv": -0.2791956961154938,
+      "p_sdiv": 3.915270508796854e-37,
+      "rs_sdiv": -0.4695090973033403,
+      "ratio_rte": 0.9959949254989624,
+      "ratio_sdiv": 0.9481830596923828
+    }
+  ],
+  "confident_wrong_bins": {
+    "conf_threshold": 0.8,
+    "q33": 4.1979864754676814,
+    "q67": 4.554544410705566,
+    "bin_labels": [
+      "L\u00e5g routing-entropi\n(bottom 33%)",
+      "Medium routing-entropi\n(33\u201367%)",
+      "H\u00f6g routing-entropi\n(top 33%)"
+    ],
+    "cw_rates": [
+      0.010810810810810811,
+      0.012574850299401197,
+      0.021621621621621623
+    ],
+    "error_rates": [
+      0.028528528528528527,
+      0.03263473053892216,
+      0.06696696696696697
+    ],
+    "n_total": [
+      3330,
+      3340,
+      3330
+    ],
+    "n_cw": [
+      36,
+      42,
+      72
+    ]
+  },
+  "p2_gate": {
+    "n_total": 10000,
+    "conf_threshold": 0.8,
+    "baseline_precision": 0.9573,
+    "baseline_cw_rate": 0.015
+  },
+  "p2_verdict": "\u2713 P2 ST\u00d6DS \u2014 gate vid p25 ger +1.55pp precision, 0.500pp CW-reduktion (coverage 25%)"
+}

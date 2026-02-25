@@ -1,0 +1,12 @@
+hidden_dim: 128
+n_streams: 4
+n_classes: 10
+batch_size: 256
+epochs: 5
+eval_n: 2000
+seeds: [0, 1, 2, 3, 4]
+tau_quantile: 0.67      # eskalerar top (1-tau_quantile) = 33% av samples
+cw_threshold: 0.80      # pmax > 0.80 AND wrong → confident-wrong
+n_pmax_bins: 5
+data_dir: /tmp/mnist
+results_dir: results

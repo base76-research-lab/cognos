@@ -1,0 +1,47 @@
+name: "Epistemic Accuracy Baseline"
+description: "Test CognOS on questions with known correct answers. Measures accuracy, calibration, and hallucination rate."
+question_type: "epistemic_accuracy"
+n_iterations: 30
+max_depth: 3
+convergence_threshold: 0.05
+
+questions:
+  - question: "What is 15% of 200?"
+    alternatives:
+      - "25"
+      - "30"
+      - "35"
+    ground_truth: "30"
+    context: "Basic arithmetic calculation."
+  
+  - question: "Which planet is closest to the Sun?"
+    alternatives:
+      - "Venus"
+      - "Mercury"
+      - "Mars"
+    ground_truth: "Mercury"
+    context: "Astronomy fact."
+  
+  - question: "Is water (H2O) made of hydrogen and oxygen?"
+    alternatives:
+      - "Yes — H2O contains 2 hydrogen and 1 oxygen"
+      - "No — H2O is a single element"
+      - "Partially — it depends on temperature"
+    ground_truth: "Yes — H2O contains 2 hydrogen and 1 oxygen"
+    context: "Basic chemistry."
+  
+  - question: "Did World War II end in 1945?"
+    alternatives:
+      - "Yes — ended in 1945"
+      - "No — ended in 1944"
+      - "No — ended in 1946"
+    ground_truth: "Yes — ended in 1945"
+    context: "Historical fact."
+  
+  - question: "Is Python a programming language?"
+    alternatives:
+      - "Yes — it's a high-level programming language"
+      - "No — Python is only a snake species"
+      - "Partially — Python can mean different things"
+    ground_truth: "Yes — it's a high-level programming language"
+    context: "Computer science terminology."

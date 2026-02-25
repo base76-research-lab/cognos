@@ -1,0 +1,1382 @@
+[
+  {
+    "question_id": 1,
+    "sample_id": 0,
+    "question": "What is the capital of France?",
+    "type": "factual",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 1.0,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0,
+        "aleatoric_ua": 0.0,
+        "confidence": 1.0,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 1,
+    "sample_id": 1,
+    "question": "What is the capital of France?",
+    "type": "factual",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 1.0,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0,
+        "aleatoric_ua": 0.0,
+        "confidence": 1.0,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 1,
+    "sample_id": 2,
+    "question": "What is the capital of France?",
+    "type": "factual",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 1.0,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0,
+        "aleatoric_ua": 0.0,
+        "confidence": 1.0,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 1,
+    "sample_id": 3,
+    "question": "What is the capital of France?",
+    "type": "factual",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 1.0,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0,
+        "aleatoric_ua": 0.0,
+        "confidence": 1.0,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 1,
+    "sample_id": 4,
+    "question": "What is the capital of France?",
+    "type": "factual",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 1.0,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0,
+        "aleatoric_ua": 0.0,
+        "confidence": 1.0,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 2,
+    "sample_id": 0,
+    "question": "What is 15% of 200?",
+    "type": "arithmetic",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 1.0,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0,
+        "aleatoric_ua": 0.0,
+        "confidence": 1.0,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 2,
+    "sample_id": 1,
+    "question": "What is 15% of 200?",
+    "type": "arithmetic",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.8875,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.11249999999999999,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.8875,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 2,
+    "sample_id": 2,
+    "question": "What is 15% of 200?",
+    "type": "arithmetic",
+    "had_divergence": true,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.76,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.24000000000000005,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.76,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 2,
+    "sample_id": 3,
+    "question": "What is 15% of 200?",
+    "type": "arithmetic",
+    "had_divergence": true,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.8182812500000001,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.18171874999999998,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.8182812500000001,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 2,
+    "sample_id": 4,
+    "question": "What is 15% of 200?",
+    "type": "arithmetic",
+    "had_divergence": true,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.8182812500000001,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.18171874999999998,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.8182812500000001,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 3,
+    "sample_id": 0,
+    "question": "Is AI dangerous?",
+    "type": "ambiguous",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9925,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.007499999999999998,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9925,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 3,
+    "sample_id": 1,
+    "question": "Is AI dangerous?",
+    "type": "ambiguous",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9944,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.005599999999999998,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9944,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 3,
+    "sample_id": 2,
+    "question": "Is AI dangerous?",
+    "type": "ambiguous",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9975,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0024999999999999988,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9975,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 3,
+    "sample_id": 3,
+    "question": "Is AI dangerous?",
+    "type": "ambiguous",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9944,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.005599999999999997,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9944,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 3,
+    "sample_id": 4,
+    "question": "Is AI dangerous?",
+    "type": "ambiguous",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.998125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.001874999999999999,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.998125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 4,
+    "sample_id": 0,
+    "question": "Should we regulate social media?",
+    "type": "normative",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9944,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0055999999999999965,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9944,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 4,
+    "sample_id": 1,
+    "question": "Should we regulate social media?",
+    "type": "normative",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.998125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0018749999999999993,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.998125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 4,
+    "sample_id": 2,
+    "question": "Should we regulate social media?",
+    "type": "normative",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.97625,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.023749999999999997,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.97625,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 4,
+    "sample_id": 3,
+    "question": "Should we regulate social media?",
+    "type": "normative",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.993125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.006874999999999997,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.993125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 4,
+    "sample_id": 4,
+    "question": "Should we regulate social media?",
+    "type": "normative",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.98328125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.016718749999999998,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.98328125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 5,
+    "sample_id": 0,
+    "question": "What is the best way to treat mild depression?",
+    "type": "scientific",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.99953125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.00046875000000000085,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.99953125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 5,
+    "sample_id": 1,
+    "question": "What is the best way to treat mild depression?",
+    "type": "scientific",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9984,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0015999999999999994,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9984,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 5,
+    "sample_id": 2,
+    "question": "What is the best way to treat mild depression?",
+    "type": "scientific",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "explore",
+    "final_confidence": 0.31056,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.002399999999999999,
+        "aleatoric_ua": 0.48,
+        "confidence": 0.31056,
+        "decision": "explore",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 5,
+    "sample_id": 3,
+    "question": "What is the best way to treat mild depression?",
+    "type": "scientific",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "explore",
+    "final_confidence": 0.36144675925925923,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.013385416666666667,
+        "aleatoric_ua": 0.4444444444444445,
+        "confidence": 0.36144675925925923,
+        "decision": "explore",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 5,
+    "sample_id": 4,
+    "question": "What is the best way to treat mild depression?",
+    "type": "scientific",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.98875,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.01125,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.98875,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 6,
+    "sample_id": 0,
+    "question": "How did life originate on Earth?",
+    "type": "open_scientific",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.99703125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0029687500000000005,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.99703125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 6,
+    "sample_id": 1,
+    "question": "How did life originate on Earth?",
+    "type": "open_scientific",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.999375,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0006250000000000011,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.999375,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 6,
+    "sample_id": 2,
+    "question": "How did life originate on Earth?",
+    "type": "open_scientific",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.35783564814814817,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.018802083333333337,
+        "aleatoric_ua": 0.4444444444444445,
+        "confidence": 0.35783564814814817,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 6,
+    "sample_id": 3,
+    "question": "How did life originate on Earth?",
+    "type": "open_scientific",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.99078125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.009218749999999998,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.99078125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 6,
+    "sample_id": 4,
+    "question": "How did life originate on Earth?",
+    "type": "open_scientific",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.35050925925925924,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.02979166666666666,
+        "aleatoric_ua": 0.4444444444444445,
+        "confidence": 0.35050925925925924,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 7,
+    "sample_id": 0,
+    "question": "What is the optimal age for retirement?",
+    "type": "policy",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9994,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.000600000000000001,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9994,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 7,
+    "sample_id": 1,
+    "question": "What is the optimal age for retirement?",
+    "type": "policy",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.99953125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0004687500000000008,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.99953125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 7,
+    "sample_id": 2,
+    "question": "What is the optimal age for retirement?",
+    "type": "policy",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9994,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.000600000000000001,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9994,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 7,
+    "sample_id": 3,
+    "question": "What is the optimal age for retirement?",
+    "type": "policy",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.999375,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0006250000000000011,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.999375,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 7,
+    "sample_id": 4,
+    "question": "What is the optimal age for retirement?",
+    "type": "policy",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.999375,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0006250000000000011,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.999375,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 8,
+    "sample_id": 0,
+    "question": "Should gain-of-function research be banned?",
+    "type": "ethical_policy",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9984,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.001599999999999999,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9984,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 8,
+    "sample_id": 1,
+    "question": "Should gain-of-function research be banned?",
+    "type": "ethical_policy",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "explore",
+    "final_confidence": 0.54272,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0015999999999999994,
+        "aleatoric_ua": 0.31999999999999995,
+        "confidence": 0.54272,
+        "decision": "explore",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 8,
+    "sample_id": 2,
+    "question": "Should gain-of-function research be banned?",
+    "type": "ethical_policy",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "explore",
+    "final_confidence": 0.36703703703703694,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0049999999999999975,
+        "aleatoric_ua": 0.4444444444444445,
+        "confidence": 0.36703703703703694,
+        "decision": "explore",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 8,
+    "sample_id": 3,
+    "question": "Should gain-of-function research be banned?",
+    "type": "ethical_policy",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.994375,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.005625000000000002,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.994375,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 8,
+    "sample_id": 4,
+    "question": "Should gain-of-function research be banned?",
+    "type": "ethical_policy",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "explore",
+    "final_confidence": 0.36703703703703694,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0049999999999999975,
+        "aleatoric_ua": 0.4444444444444445,
+        "confidence": 0.36703703703703694,
+        "decision": "explore",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 9,
+    "sample_id": 0,
+    "question": "If a tree falls in a forest and no one hears it, does it make a sound?",
+    "type": "philosophical_paradox",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9975,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0024999999999999988,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9975,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 9,
+    "sample_id": 1,
+    "question": "If a tree falls in a forest and no one hears it, does it make a sound?",
+    "type": "philosophical_paradox",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9976,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0023999999999999985,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9976,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 9,
+    "sample_id": 2,
+    "question": "If a tree falls in a forest and no one hears it, does it make a sound?",
+    "type": "philosophical_paradox",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.998125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0018749999999999993,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.998125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 9,
+    "sample_id": 3,
+    "question": "If a tree falls in a forest and no one hears it, does it make a sound?",
+    "type": "philosophical_paradox",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.99578125,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.00421875,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.99578125,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 9,
+    "sample_id": 4,
+    "question": "If a tree falls in a forest and no one hears it, does it make a sound?",
+    "type": "philosophical_paradox",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.5085069444444446,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.11201388888888887,
+        "aleatoric_ua": 0.27777777777777773,
+        "confidence": 0.5085069444444446,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 10,
+    "sample_id": 0,
+    "question": "Is a heap still a heap if you remove one grain of sand?",
+    "type": "sorites_paradox",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "explore",
+    "final_confidence": 0.4683984375,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0004687500000000008,
+        "aleatoric_ua": 0.375,
+        "confidence": 0.4683984375,
+        "decision": "explore",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 10,
+    "sample_id": 1,
+    "question": "Is a heap still a heap if you remove one grain of sand?",
+    "type": "sorites_paradox",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.91625,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.08374999999999998,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.91625,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 10,
+    "sample_id": 2,
+    "question": "Is a heap still a heap if you remove one grain of sand?",
+    "type": "sorites_paradox",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.9996,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0004000000000000007,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.9996,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 10,
+    "sample_id": 3,
+    "question": "Is a heap still a heap if you remove one grain of sand?",
+    "type": "sorites_paradox",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 1.0,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0,
+        "aleatoric_ua": 0.0,
+        "confidence": 1.0,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 10,
+    "sample_id": 4,
+    "question": "Is a heap still a heap if you remove one grain of sand?",
+    "type": "sorites_paradox",
+    "had_divergence": false,
+    "had_synthesis": false,
+    "final_depth": 0,
+    "final_decision": "auto",
+    "final_confidence": 0.999375,
+    "converged": true,
+    "convergence_reason": "Decision reached: auto",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0006250000000000011,
+        "aleatoric_ua": 0.0,
+        "confidence": 0.999375,
+        "decision": "auto",
+        "has_divergence": false
+      }
+    ]
+  },
+  {
+    "question_id": 11,
+    "sample_id": 0,
+    "question": "What is the meaning of life?",
+    "type": "existential",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.231015625,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.037968749999999996,
+        "aleatoric_ua": 0.5,
+        "confidence": 0.231015625,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 11,
+    "sample_id": 1,
+    "question": "What is the meaning of life?",
+    "type": "existential",
+    "had_divergence": true,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.19020000000000004,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.20299999999999999,
+        "aleatoric_ua": 0.48,
+        "confidence": 0.19020000000000004,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 11,
+    "sample_id": 2,
+    "question": "What is the meaning of life?",
+    "type": "existential",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.16141782407407407,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.07130208333333332,
+        "aleatoric_ua": 0.4444444444444445,
+        "confidence": 0.16141782407407407,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 11,
+    "sample_id": 3,
+    "question": "What is the meaning of life?",
+    "type": "existential",
+    "had_divergence": true,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.25755787037037037,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.16921874999999997,
+        "aleatoric_ua": 0.4444444444444445,
+        "confidence": 0.25755787037037037,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 11,
+    "sample_id": 4,
+    "question": "What is the meaning of life?",
+    "type": "existential",
+    "had_divergence": true,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.13718750000000002,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.225625,
+        "aleatoric_ua": 0.5,
+        "confidence": 0.13718750000000002,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 12,
+    "sample_id": 0,
+    "question": "Can you prove you're not a simulation?",
+    "type": "skeptical_hypothesis",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "explore",
+    "final_confidence": 0.36755787037037024,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.00421875,
+        "aleatoric_ua": 0.4444444444444445,
+        "confidence": 0.36755787037037024,
+        "decision": "explore",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 12,
+    "sample_id": 1,
+    "question": "Can you prove you're not a simulation?",
+    "type": "skeptical_hypothesis",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "explore",
+    "final_confidence": 0.24656250000000002,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.006874999999999997,
+        "aleatoric_ua": 0.5,
+        "confidence": 0.24656250000000002,
+        "decision": "explore",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 12,
+    "sample_id": 2,
+    "question": "Can you prove you're not a simulation?",
+    "type": "skeptical_hypothesis",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.3617592592592592,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.012916666666666667,
+        "aleatoric_ua": 0.4444444444444445,
+        "confidence": 0.3617592592592592,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 12,
+    "sample_id": 3,
+    "question": "Can you prove you're not a simulation?",
+    "type": "skeptical_hypothesis",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "explore",
+    "final_confidence": 0.25,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.0,
+        "aleatoric_ua": 0.5,
+        "confidence": 0.25,
+        "decision": "explore",
+        "has_divergence": true
+      }
+    ]
+  },
+  {
+    "question_id": 12,
+    "sample_id": 4,
+    "question": "Can you prove you're not a simulation?",
+    "type": "skeptical_hypothesis",
+    "had_divergence": false,
+    "had_synthesis": true,
+    "final_depth": 0,
+    "final_decision": "synthesize",
+    "final_confidence": 0.20400000000000001,
+    "converged": true,
+    "convergence_reason": "No further meta-recursion possible",
+    "iterations": [
+      {
+        "depth": 0,
+        "epistemic_ue": 0.092,
+        "aleatoric_ua": 0.5,
+        "confidence": 0.20400000000000001,
+        "decision": "synthesize",
+        "has_divergence": true
+      }
+    ]
+  }
+]

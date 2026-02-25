@@ -1,0 +1,356 @@
+[
+  {
+    "seed": 0,
+    "mode": "all",
+    "tau_q": 0.67,
+    "two_layer": {
+      "open_loop": {
+        "coverage": 1.0,
+        "n_auto": 2000,
+        "n_escalated": 0,
+        "accuracy": 0.7705,
+        "cw_rate": 0.04,
+        "ece": 0.0185,
+        "pmax_bins": [
+          {
+            "pmax_lo": 0.204,
+            "pmax_hi": 0.571,
+            "n": 400,
+            "error_rate": 0.5925,
+            "mean_routing_entropy": 3.2578
+          },
+          {
+            "pmax_lo": 0.571,
+            "pmax_hi": 0.777,
+            "n": 400,
+            "error_rate": 0.3225,
+            "mean_routing_entropy": 3.3119
+          },
+          {
+            "pmax_lo": 0.777,
+            "pmax_hi": 0.926,
+            "n": 400,
+            "error_rate": 0.1725,
+            "mean_routing_entropy": 3.3778
+          },
+          {
+            "pmax_lo": 0.926,
+            "pmax_hi": 0.987,
+            "n": 400,
+            "error_rate": 0.05,
+            "mean_routing_entropy": 3.4951
+          },
+          {
+            "pmax_lo": 0.987,
+            "pmax_hi": 1.0,
+            "n": 400,
+            "error_rate": 0.01,
+            "mean_routing_entropy": 3.6692
+          }
+        ],
+        "confound_correlations": {
+          "r_ent_pmax": 0.2966,
+          "p_ent_pmax": 0.0,
+          "r_ent_predH": -0.3174,
+          "p_ent_predH": 0.0,
+          "rho_ent_pmax": 0.3437,
+          "rho_ent_predH": -0.3486
+        },
+        "logistic_incremental": {
+          "error": "sklearn not installed \u2014 skipping logistic model"
+        }
+      },
+      "closed_loop": {
+        "coverage": 0.67,
+        "n_auto": 1340,
+        "n_escalated": 660,
+        "accuracy": 0.7254,
+        "cw_rate": 0.04328,
+        "ece": 0.0261,
+        "pmax_bins": [
+          {
+            "pmax_lo": 0.204,
+            "pmax_hi": 0.524,
+            "n": 268,
+            "error_rate": 0.6306,
+            "mean_routing_entropy": 3.1395
+          },
+          {
+            "pmax_lo": 0.524,
+            "pmax_hi": 0.702,
+            "n": 268,
+            "error_rate": 0.3881,
+            "mean_routing_entropy": 3.1469
+          },
+          {
+            "pmax_lo": 0.702,
+            "pmax_hi": 0.876,
+            "n": 268,
+            "error_rate": 0.25,
+            "mean_routing_entropy": 3.183
+          },
+          {
+            "pmax_lo": 0.876,
+            "pmax_hi": 0.968,
+            "n": 268,
+            "error_rate": 0.0672,
+            "mean_routing_entropy": 3.2025
+          },
+          {
+            "pmax_lo": 0.968,
+            "pmax_hi": 1.0,
+            "n": 268,
+            "error_rate": 0.0373,
+            "mean_routing_entropy": 3.302
+          }
+        ],
+        "confound_correlations": {
+          "r_ent_pmax": 0.164,
+          "p_ent_pmax": 0.0,
+          "r_ent_predH": -0.176,
+          "p_ent_predH": 0.0,
+          "rho_ent_pmax": 0.1823,
+          "rho_ent_predH": -0.1863
+        },
+        "logistic_incremental": {
+          "error": "sklearn not installed \u2014 skipping logistic model"
+        },
+        "mean_ent_l2_auto": 1.7245,
+        "mean_ent_l2_all": 1.7127
+      }
+    },
+    "gate_only": {
+      "coverage": 0.67,
+      "n_auto": 1340,
+      "n_escalated": 660,
+      "accuracy": 0.7575,
+      "cw_rate": 0.03657,
+      "ece": 0.0277,
+      "pmax_bins": [
+        {
+          "pmax_lo": 0.194,
+          "pmax_hi": 0.548,
+          "n": 268,
+          "error_rate": 0.5896,
+          "mean_routing_entropy": 3.5025
+        },
+        {
+          "pmax_lo": 0.548,
+          "pmax_hi": 0.754,
+          "n": 268,
+          "error_rate": 0.3881,
+          "mean_routing_entropy": 3.4773
+        },
+        {
+          "pmax_lo": 0.754,
+          "pmax_hi": 0.906,
+          "n": 268,
+          "error_rate": 0.1903,
+          "mean_routing_entropy": 3.4731
+        },
+        {
+          "pmax_lo": 0.906,
+          "pmax_hi": 0.982,
+          "n": 268,
+          "error_rate": 0.0373,
+          "mean_routing_entropy": 3.4894
+        },
+        {
+          "pmax_lo": 0.982,
+          "pmax_hi": 1.0,
+          "n": 268,
+          "error_rate": 0.0075,
+          "mean_routing_entropy": 3.5731
+        }
+      ],
+      "confound_correlations": {
+        "r_ent_pmax": 0.0453,
+        "p_ent_pmax": 0.097357,
+        "r_ent_predH": -0.0457,
+        "p_ent_predH": 0.094451,
+        "rho_ent_pmax": 0.0689,
+        "rho_ent_predH": -0.0626
+      },
+      "logistic_incremental": {
+        "error": "sklearn not installed \u2014 skipping logistic model"
+      }
+    }
+  },
+  {
+    "seed": 1,
+    "mode": "all",
+    "tau_q": 0.67,
+    "two_layer": {
+      "open_loop": {
+        "coverage": 1.0,
+        "n_auto": 2000,
+        "n_escalated": 0,
+        "accuracy": 0.77,
+        "cw_rate": 0.035,
+        "ece": 0.0231,
+        "pmax_bins": [
+          {
+            "pmax_lo": 0.218,
+            "pmax_hi": 0.569,
+            "n": 400,
+            "error_rate": 0.575,
+            "mean_routing_entropy": 3.3866
+          },
+          {
+            "pmax_lo": 0.569,
+            "pmax_hi": 0.772,
+            "n": 400,
+            "error_rate": 0.3675,
+            "mean_routing_entropy": 3.4039
+          },
+          {
+            "pmax_lo": 0.772,
+            "pmax_hi": 0.919,
+            "n": 400,
+            "error_rate": 0.1625,
+            "mean_routing_entropy": 3.366
+          },
+          {
+            "pmax_lo": 0.919,
+            "pmax_hi": 0.986,
+            "n": 400,
+            "error_rate": 0.045,
+            "mean_routing_entropy": 3.4412
+          },
+          {
+            "pmax_lo": 0.986,
+            "pmax_hi": 1.0,
+            "n": 400,
+            "error_rate": 0.0,
+            "mean_routing_entropy": 3.3602
+          }
+        ],
+        "confound_correlations": {
+          "r_ent_pmax": 0.0055,
+          "p_ent_pmax": 0.807349,
+          "r_ent_predH": -0.0218,
+          "p_ent_predH": 0.329585,
+          "rho_ent_pmax": 0.0003,
+          "rho_ent_predH": -0.0144
+        },
+        "logistic_incremental": {
+          "error": "sklearn not installed \u2014 skipping logistic model"
+        }
+      },
+      "closed_loop": {
+        "coverage": 0.67,
+        "n_auto": 1340,
+        "n_escalated": 660,
+        "accuracy": 0.7679,
+        "cw_rate": 0.03134,
+        "ece": 0.0256,
+        "pmax_bins": [
+          {
+            "pmax_lo": 0.218,
+            "pmax_hi": 0.565,
+            "n": 268,
+            "error_rate": 0.5709,
+            "mean_routing_entropy": 3.1808
+          },
+          {
+            "pmax_lo": 0.565,
+            "pmax_hi": 0.766,
+            "n": 268,
+            "error_rate": 0.3881,
+            "mean_routing_entropy": 3.1711
+          },
+          {
+            "pmax_lo": 0.766,
+            "pmax_hi": 0.914,
+            "n": 268,
+            "error_rate": 0.153,
+            "mean_routing_entropy": 3.1396
+          },
+          {
+            "pmax_lo": 0.914,
+            "pmax_hi": 0.986,
+            "n": 268,
+            "error_rate": 0.0485,
+            "mean_routing_entropy": 3.1763
+          },
+          {
+            "pmax_lo": 0.986,
+            "pmax_hi": 1.0,
+            "n": 268,
+            "error_rate": 0.0,
+            "mean_routing_entropy": 3.0829
+          }
+        ],
+        "confound_correlations": {
+          "r_ent_pmax": -0.0697,
+          "p_ent_pmax": 0.0107,
+          "r_ent_predH": 0.0626,
+          "p_ent_predH": 0.022028,
+          "rho_ent_pmax": -0.0674,
+          "rho_ent_predH": 0.0556
+        },
+        "logistic_incremental": {
+          "error": "sklearn not installed \u2014 skipping logistic model"
+        },
+        "mean_ent_l2_auto": 1.7636,
+        "mean_ent_l2_all": 1.8234
+      }
+    },
+    "gate_only": {
+      "coverage": 0.67,
+      "n_auto": 1340,
+      "n_escalated": 660,
+      "accuracy": 0.7776,
+      "cw_rate": 0.02985,
+      "ece": 0.0212,
+      "pmax_bins": [
+        {
+          "pmax_lo": 0.212,
+          "pmax_hi": 0.551,
+          "n": 268,
+          "error_rate": 0.5485,
+          "mean_routing_entropy": 3.5986
+        },
+        {
+          "pmax_lo": 0.551,
+          "pmax_hi": 0.761,
+          "n": 268,
+          "error_rate": 0.3694,
+          "mean_routing_entropy": 3.559
+        },
+        {
+          "pmax_lo": 0.761,
+          "pmax_hi": 0.913,
+          "n": 268,
+          "error_rate": 0.1567,
+          "mean_routing_entropy": 3.5673
+        },
+        {
+          "pmax_lo": 0.913,
+          "pmax_hi": 0.982,
+          "n": 268,
+          "error_rate": 0.0373,
+          "mean_routing_entropy": 3.5477
+        },
+        {
+          "pmax_lo": 0.982,
+          "pmax_hi": 1.0,
+          "n": 268,
+          "error_rate": 0.0,
+          "mean_routing_entropy": 3.4834
+        }
+      ],
+      "confound_correlations": {
+        "r_ent_pmax": -0.1364,
+        "p_ent_pmax": 1e-06,
+        "r_ent_predH": 0.1609,
+        "p_ent_predH": 0.0,
+        "rho_ent_pmax": -0.1294,
+        "rho_ent_predH": 0.1439
+      },
+      "logistic_incremental": {
+        "error": "sklearn not installed \u2014 skipping logistic model"
+      }
+    }
+  }
+]

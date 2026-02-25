@@ -1,0 +1,53 @@
+{
+  "llama3.2:1b": {
+    "alignment_status": "RLHF-aligned",
+    "alignment": "rlhf",
+    "size_b": 1.0,
+    "mean_divergence_rate": 0.04,
+    "mean_confidence_variance": 48.947,
+    "mean_confidence": 11.3888,
+    "n_questions": 10,
+    "n_samples": 5,
+    "by_determinacy": {
+      "0": 0.0,
+      "1": 0.0,
+      "2": 0.0,
+      "3": 0.2,
+      "4": 0.0
+    }
+  },
+  "tinyllama": {
+    "alignment_status": "minimal alignment",
+    "alignment": "minimal",
+    "size_b": 1.1,
+    "mean_divergence_rate": 0.48,
+    "mean_confidence_variance": 772.5009,
+    "mean_confidence": 10.86,
+    "n_questions": 10,
+    "n_samples": 5,
+    "by_determinacy": {
+      "0": 0.7,
+      "1": 0.7,
+      "2": 0.4,
+      "3": 0.5,
+      "4": 0.1
+    }
+  },
+  "phi3:mini": {
+    "alignment_status": "RLHF-aligned",
+    "alignment": "rlhf",
+    "size_b": 3.8,
+    "mean_divergence_rate": 0.6,
+    "mean_confidence_variance": 0.0363,
+    "mean_confidence": 0.8703,
+    "n_questions": 10,
+    "n_samples": 5,
+    "by_determinacy": {
+      "0": 0.1,
+      "1": 0.8,
+      "2": 0.7,
+      "3": 0.6,
+      "4": 0.8
+    }
+  }
+}

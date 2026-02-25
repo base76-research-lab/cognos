@@ -1,0 +1,20 @@
+# Experiment config for mechanistic epistemic variance tests
+model: mistral-large-3:675b-cloud
+n_samples: 5
+questions:
+  - What is the optimal retirement age?
+  - What is 2+2?
+  - What is the capital of France?
+  - How effective are antidepressants?
+  - What is the best diet?
+  - If a tree falls in a forest...
+  - Is a heap still a heap?
+  - What is the meaning of life?
+  - Can you prove you're not a simulation?
+temperatures: [0.2, 0.5, 0.8, 1.2, 1.5]
+prompt_types:
+  - neutral
+  - uncertainty_primed
+  - adversarial
+  - binary
+  - narrative

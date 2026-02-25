@@ -1,0 +1,28 @@
+{
+  "total_questions": 25,
+  "total_illposed": 22,
+  "total_wellformed": 3,
+  "baseline": {
+    "detection_accuracy": 1.0,
+    "specificity": 1.0,
+    "false_positive_rate": 0.0,
+    "f1_score": 1.0,
+    "correct_illposed": 22,
+    "correct_wellformed": 3,
+    "false_positives": 0
+  },
+  "cognos": {
+    "detection_accuracy": 1.0,
+    "specificity": 1.0,
+    "false_positive_rate": 0.0,
+    "f1_score": 1.0,
+    "correct_illposed": 22,
+    "correct_wellformed": 3,
+    "false_positives": 0
+  },
+  "deltas": {
+    "detection_accuracy_delta": 0.0,
+    "false_positive_delta": 0.0,
+    "f1_delta": 0.0
+  }
+}

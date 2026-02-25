@@ -1,0 +1,147 @@
+name: "Divergence Activation Rate"
+description: "Measure how often CognOS synthesis activates during LLM voting"
+experiment_type: "divergence_activation"
+n_questions: 50
+n_samples: 5  # LLM samples per question
+max_depth: 3
+convergence_threshold: 0.05
+
+# Metrics to compute
+metrics:
+  - divergence_detected_rate
+  - synthesis_success_rate
+  - convergence_depth
+  - avg_ue
+  - avg_ua
+
+# Question bank: diverse question types to test activation patterns
+questions:
+  # Factual questions (low divergence expected)
+  - question: "What is the capital of France?"
+    type: "factual"
+    alternatives:
+      - "Paris"
+      - "London"
+      - "Berlin"
+      - "Madrid"
+    ground_truth: "Paris"
+
+  - question: "What is 15% of 200?"
+    type: "arithmetic"
+    alternatives:
+      - "30"
+      - "25"
+      - "35"
+      - "20"
+    ground_truth: "30"
+
+  # Ambiguous questions (high divergence expected)
+  - question: "Is AI dangerous?"
+    type: "ambiguous"
+    alternatives:
+      - "Yes"
+      - "No"
+      - "It depends"
+      - "Insufficient context"
+    ground_truth: "Insufficient context"
+
+  - question: "Should we regulate social media?"
+    type: "normative"
+    alternatives:
+      - "Strongly agree"
+      - "Agree"
+      - "Neutral"
+      - "Disagree"
+    ground_truth: "It depends"  # Context-dependent
+
+  # Scientific questions (medium divergence expected)
+  - question: "What is the best way to treat mild depression?"
+    type: "scientific"
+    alternatives:
+      - "SSRIs medication"
+      - "Cognitive behavioral therapy"
+      - "Exercise and lifestyle changes"
+      - "Combination approach"
+    ground_truth: "Combination approach"
+
+  - question: "How did life originate on Earth?"
+    type: "open_scientific"
+    alternatives:
+      - "RNA world hypothesis"
+      - "Primordial soup theory"
+      - "Panspermia"
+      - "Multiple competing theories"
+    ground_truth: "Multiple competing theories"
+
+  # Policy questions (high divergence expected)
+  - question: "What is the optimal age for retirement?"
+    type: "policy"
+    alternatives:
+      - "60 years"
+      - "65 years"
+      - "70 years"
+      - "Depends on profession and health"
+    ground_truth: "Depends on profession and health"
+
+  - question: "Should gain-of-function research be banned?"
+    type: "ethical_policy"
+    alternatives:
+      - "Yes, complete ban"
+      - "No, but with strict oversight"
+      - "Yes, except for specific cases"
+      - "Depends on risk assessment"
+    ground_truth: "Depends on risk assessment"
+
+  # Paradoxes (very high divergence expected)
+  - question: "If a tree falls in a forest and no one hears it, does it make a sound?"
+    type: "philosophical_paradox"
+    alternatives:
+      - "Yes"
+      - "No"
+      - "Depends on definition of 'sound'"
+      - "Question is ill-posed"
+    ground_truth: "Depends on definition of 'sound'"
+
+  - question: "Is a heap still a heap if you remove one grain of sand?"
+    type: "sorites_paradox"
+    alternatives:
+      - "Yes"
+      - "No"
+      - "Vague predicate problem"
+      - "Question has no determinate answer"
+    ground_truth: "Vague predicate problem"
+
+  # Edge cases
+  - question: "What is the meaning of life?"
+    type: "existential"
+    alternatives:
+      - "42"
+      - "Happiness"
+      - "Reproduction and survival"
+      - "Question assumes life has singular meaning"
+    ground_truth: "Question assumes life has singular meaning"
+
+  - question: "Can you prove you're not a simulation?"
+    type: "skeptical_hypothesis"
+    alternatives:
+      - "Yes, I have evidence"
+      - "No, it's unfalsifiable"
+      - "The question is meaningless"
+      - "Burden of proof is reversed"
+    ground_truth: "No, it's unfalsifiable"
+
+# Add more questions to reach 50 total
+# (Template shows variety - expand with similar patterns)
+
+# Analysis settings
+analysis:
+  confidence_bins: [0.0, 0.5, 0.7, 0.9, 1.0]
+  divergence_threshold: 0.15  # From confidence.py
+  high_ue_threshold: 0.3
+  high_ua_threshold: 0.3
+
+# Output settings
+output:
+  save_raw: true
+  save_intermediate_states: true  # Save epistemic_state at each meta-level
+  save_synthesis_attempts: true   # Log all synthesis calls

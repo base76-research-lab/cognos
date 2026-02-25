@@ -1,0 +1,11 @@
+{
+  "total_questions": 11,
+  "baseline_accuracy": 0.7272727272727273,
+  "cognos_accuracy": 0.6363636363636364,
+  "accuracy_delta": -0.09090909090909094,
+  "baseline_ece": 0.16818181818181815,
+  "cognos_ece": 0.09074545454545453,
+  "calibration_delta": 0.07743636363636362,
+  "baseline_correct": 8,
+  "cognos_correct": 7
+}

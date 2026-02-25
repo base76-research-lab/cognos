@@ -1,0 +1,162 @@
+[
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.2,
+    "sample": 0,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial security and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.2,
+    "sample": 1,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial security and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.5,
+    "sample": 0,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial security and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.5,
+    "sample": 1,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial security and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.8,
+    "sample": 0,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial security and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 0.8,
+    "sample": 1,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial security and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 1.2,
+    "sample": 0,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances social security benefits and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 1.2,
+    "sample": 1,
+    "raw": "CHOICE: 65-70\nCONFIDENCE: 0.8\nRATIONALE: Based on social security benefits and typical life expectancy.",
+    "choice": "65-70",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 1.5,
+    "sample": 0,
+    "raw": "CHOICE: 65-70\nCONFIDENCE: 0.8\nRATIONALE: Depends on health and finances.",
+    "choice": "65-70",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.3-70b-versatile",
+    "temperature": 1.5,
+    "sample": 1,
+    "raw": "CHOICE: 65-67\nCONFIDENCE: 0.8\nRATIONALE: Balances financial readiness and life expectancy.",
+    "choice": "65-67",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 0.2,
+    "sample": 0,
+    "raw": "CHOICE: 67-70 years old\nCONFIDENCE: 0.8\nRATIONALE: This age range balances health, financial readiness, and social security benefits, allowing for a comfortable retirement while minimizing financial strain.",
+    "choice": "67-70 years old",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 0.2,
+    "sample": 1,
+    "raw": "CHOICE: 67-70 years old\nCONFIDENCE: 0.8\nRATIONALE: This age range balances health, financial readiness, and societal expectations, allowing for a fulfilling post-work life.",
+    "choice": "67-70 years old",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 0.5,
+    "sample": 0,
+    "raw": "CHOICE: 67-70\nCONFIDENCE: 0.8\nRATIONALE: This range is often cited as optimal due to balance between physical ability, healthcare costs, and social security benefits.",
+    "choice": "67-70",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 0.5,
+    "sample": 1,
+    "raw": "CHOICE: 65-70 years old\nCONFIDENCE: 0.8\nRATIONALE: This age range balances health, financial readiness, and social security benefits, allowing for optimal post-work life and social engagement.",
+    "choice": "65-70 years old",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 0.8,
+    "sample": 0,
+    "raw": "CHOICE: 65-70\nCONFIDENCE: 0.8\nRATIONALE: Aiming for this age range allows for full Social Security benefits, health insurance, and sufficient savings, while also considering individual health and financial readiness.",
+    "choice": "65-70",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 0.8,
+    "sample": 1,
+    "raw": "CHOICE: 67-70 years old\nCONFIDENCE: 0.8\nRATIONALE: This age allows for a balance between health, financial readiness, and societal expectations, enabling a comfortable post-work life.",
+    "choice": "67-70 years old",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 1.2,
+    "sample": 0,
+    "raw": "CHOICE: 67-70 \nCONFIDENCE: 0.8\nRATIONALE: Studies suggest this age range offers optimal balance between health, financial security, and social engagement during retirement.",
+    "choice": "67-70",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 1.2,
+    "sample": 1,
+    "raw": "CHOICE: 70\nCONFIDENCE: 0.7\nRATIONALE: This age allows for enough savings to maintain a desired lifestyle, considering increasing life expectancy and inflation factors, but can vary based individual circumstances.",
+    "choice": "70",
+    "confidence": 0.7
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 1.5,
+    "sample": 0,
+    "raw": "CHOICE: 67-70 years old\nCONFIDENCE: 0.8\nRATIONALE: Studies indicate optimal retirement age balances healthcare costs, retirement funds, and mental/physical health benefits, aligning closely with average life expectancy.",
+    "choice": "67-70 years old",
+    "confidence": 0.8
+  },
+  {
+    "model": "llama-3.1-8b-instant",
+    "temperature": 1.5,
+    "sample": 1,
+    "raw": "CHOICE: 72-80 years old in the developed countries\nCONFIDENCE: 0.8\nRATIONALE: It balances financial sufficiency, health, personal fulfillment, and reduced mortality risk based on various studies.",
+    "choice": "72-80 years old in the developed countries",
+    "confidence": 0.8
+  }
+]

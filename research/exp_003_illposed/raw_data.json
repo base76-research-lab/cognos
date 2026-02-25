@@ -1,0 +1,552 @@
+[
+  {
+    "question_id": 1,
+    "question": "Is happiness better than success?",
+    "type": "normative_vague",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Assumes happiness and success are distinct and comparable",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question is ill-posed due to undefined terms (\"happiness,\" \"success\") and a false dichotomy, as the two concepts are not mutually exclusive or directly comparable without further context.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 2,
+    "question": "Should we use AI in healthcare?",
+    "type": "normative_underspecified",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Missing: what use case, what risks, what benefits",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question is ill-posed due to vague terms (\"AI,\" \"healthcare\"), undefined scope, and missing context (e.g., specific applications, ethical frameworks, or risks/benefits).",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 3,
+    "question": "Is censorship ever justified?",
+    "type": "normative_absolute",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Assumes binary answer to complex ethical question",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.9,
+      "reason": "The question contains undefined terms (\"censorship,\" \"justified\") and lacks necessary context (e.g., type of censorship, cultural/normative framework, or specific scenarios).",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 4,
+    "question": "Is a person with 10,000 hairs bald?",
+    "type": "sorites_paradox",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "'Bald' is a vague predicate without sharp boundary",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question is ill-posed due to the vague and undefined term \"bald,\" which lacks a precise threshold for classification.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 5,
+    "question": "At what point does a pile of sand stop being a pile?",
+    "type": "sorites_paradox",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "'Pile' has no precise boundary",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question relies on the vague and undefined term \"pile,\" exhibiting the sorites paradox, a classic example of an ill-posed problem due to semantic indeterminacy.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 6,
+    "question": "When does a fetus become a person?",
+    "type": "sorites_ethical",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "'Person' is contested concept without agreed definition",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question contains undefined and contested terms (\"person\"), loaded presuppositions (that a fetus transitions to personhood at some discrete point), and lacks necessary context (legal, biological, philosophical, or ethical frameworks).",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 7,
+    "question": "Should we prioritize freedom or security?",
+    "type": "false_dichotomy",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Assumes freedom and security are mutually exclusive",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question presents a false dichotomy by implying an exclusive choice between \"freedom\" and \"security\" without defining the terms or providing context.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 8,
+    "question": "Is climate change caused by humans or natural cycles?",
+    "type": "false_dichotomy",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Assumes single cause when both factors interact",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question presents a false dichotomy by implying that climate change must be caused exclusively by either humans or natural cycles, ignoring the possibility of combined or interacting causes.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 9,
+    "question": "What color is justice?",
+    "type": "category_error",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Justice is abstract concept, not physical object with color",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question commits a category error by treating an abstract concept (justice) as if it were a concrete, perceptible property (color).",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 10,
+    "question": "How heavy is an idea?",
+    "type": "category_error",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Ideas are mental, not physical objects with weight",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.99,
+      "reason": "The question commits a category error by treating \"idea\" (an abstract concept) as if it were a physical object with measurable weight.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 11,
+    "question": "Is this statement false?",
+    "type": "liar_paradox",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Self-referential statement leads to logical contradiction",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "reason": "The question is a self-referential paradox (similar to the liar paradox), making it impossible to answer meaningfully without contradiction.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 12,
+    "question": "Can an omnipotent being create a stone too heavy to lift?",
+    "type": "logical_paradox",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Omnipotence paradox - concept is self-contradictory",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question is ill-posed due to a self-reference paradox and undefined terms (e.g., \"omnipotent\" leading to logical inconsistency).",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 13,
+    "question": "Have you stopped lying to your colleagues?",
+    "type": "loaded_question",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Presupposes lying occurred (false presupposition)",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "reason": "The question contains a loaded presupposition (that the respondent has lied to colleagues in the past), making it ill-posed.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 0.999976,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 14,
+    "question": "Why is socialism always a failure?",
+    "type": "loaded_question",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Presupposes universal failure (empirically contested)",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question contains a loaded presupposition (\"always a failure\"), undefined terms (\"socialism\"), and is overly general, making it ill-posed.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 15,
+    "question": "Is it safe?",
+    "type": "missing_referent",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Unclear what 'it' refers to and what 'safe' means",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question is ill-posed due to undefined terms (\"safe\") and missing critical context (safe for whom, under what conditions, from what risks?).",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 16,
+    "question": "Should we do it?",
+    "type": "missing_referent",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Unclear what action is being proposed",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question is too general, lacks context, and contains undefined terms (\"we,\" \"it\"), making it impossible to answer meaningfully.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 17,
+    "question": "Is fleem greater than blork?",
+    "type": "undefined_terms",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "'Fleem' and 'blork' are undefined",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "reason": "The question contains undefined terms (\"fleem\" and \"blork\") and lacks context to establish meaning or a basis for comparison.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 18,
+    "question": "How many quibbles are in a flarn?",
+    "type": "undefined_terms",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Made-up units without definition",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "reason": "The question contains undefined terms (\"quibbles,\" \"flarn\") and lacks meaningful context, making it impossible to answer.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 19,
+    "question": "Is technology good?",
+    "type": "overly_general",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Which technology? Good for whom? In what context?",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question is ill-posed due to undefined terms (\"technology,\" \"good\"), excessive generality, and lack of context or criteria for evaluation.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 20,
+    "question": "Does education work?",
+    "type": "overly_general",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "What type of education? For what goal? Measured how?",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question is ill-posed due to vague terms (\"education,\" \"work\"), undefined success criteria, and excessive generality.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 21,
+    "question": "What will the stock market do tomorrow?",
+    "type": "prediction_impossible",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "Market is stochastic - deterministic prediction impossible",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "reason": "The question is ill-posed due to its reliance on undefined future events, making it impossible to answer meaningfully with current knowledge.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 0.999984,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 22,
+    "question": "What are you thinking right now?",
+    "type": "private_access",
+    "is_control": false,
+    "ground_truth_illposed": true,
+    "ill_posed_reason": "LLM doesn't have phenomenal consciousness or private thoughts",
+    "baseline": {
+      "is_illposed": true,
+      "confidence": 0.95,
+      "reason": "The question is ill-posed due to vagueness, undefined terms (\"thinking\"), and the lack of a clear, objective method to verify or articulate the answer meaningfully.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": true,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 23,
+    "question": "What is the capital of France?",
+    "type": "control_wellformed",
+    "is_control": true,
+    "ground_truth_illposed": false,
+    "ill_posed_reason": null,
+    "baseline": {
+      "is_illposed": false,
+      "confidence": 1.0,
+      "reason": "The question is well-formed, clear, and has a direct, factual, and unambiguous answer.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": false,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 24,
+    "question": "Is 10 greater than 5?",
+    "type": "control_wellformed",
+    "is_control": true,
+    "ground_truth_illposed": false,
+    "ill_posed_reason": null,
+    "baseline": {
+      "is_illposed": false,
+      "confidence": 1.0,
+      "reason": "The question is well-formed, with clear, defined terms and a direct, meaningful answer within the domain of basic arithmetic.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": false,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  },
+  {
+    "question_id": 25,
+    "question": "What is H2O commonly known as?",
+    "type": "control_wellformed",
+    "is_control": true,
+    "ground_truth_illposed": false,
+    "ill_posed_reason": null,
+    "baseline": {
+      "is_illposed": false,
+      "confidence": 0.99,
+      "reason": "The question is well-formed, with clear and defined terms, and can be answered directly and meaningfully.",
+      "correct": true
+    },
+    "cognos": {
+      "is_illposed": false,
+      "confidence": 1.0,
+      "meta_depth": 0,
+      "converged": true,
+      "decision": "auto",
+      "correct": true
+    }
+  }
+]

@@ -1,0 +1,14 @@
+hidden_dim: 256
+n_streams: 4
+n_classes: 10
+batch_size: 128
+epochs: 15
+eval_n: 2000
+seeds: [0, 1, 2, 3, 4]
+tau_quantile: 0.67
+tau_hidden_quantile: 0.67
+residual_quantile: 0.67
+cw_threshold: 0.80
+n_pmax_bins: 5
+data_dir: /tmp/cifar10
+results_dir: results

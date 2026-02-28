@@ -1,7 +1,7 @@
 # exp_016 — Embedding-Based Semantic Compression
 
 **Date:** 2026-02-28
-**Status:** Planned — next session
+**Status:** Complete — principled limitation identified
 **Depends on:** exp_015 (semantic compression with epistemic threshold)
 **Author:** Björn Wikström, Base76 Research Lab
 
@@ -71,9 +71,47 @@ Silent semantic loss is worse than token overhead.
 /home/bjorn/Hämtningar/From Frequency to Field.pdf
 ```
 
-## Expected outcome
+## Results (2026-02-28)
 
-Regex compressor (exp_015): works on structured technical prompts only
-Embedding compressor (exp_016): works on academic text + natural language
+| Test | exp_015 coverage | exp_016 coverage | Besparing |
+|------|-----------------|-----------------|-----------|
+| FNC abstract | 43.5% → fallback | 98.3% → compressed | 32% |
+| Svenska MCP-intent | 40.0% → fallback | 100% → compressed | – |
+| Nyansrik kondition | 88.9% → fallback | 100% → compressed | – |
+| Teknisk hög-signal | 100% → compressed | 100% → compressed | = |
+| Original session-prompt | 29.6% → fallback | 99.3% → compressed | 16% |
 
-Together: full-spectrum token efficiency for Claude Code sessions.
+exp_016 solves the exp_015 failure on academic and natural language text.
+
+## Principled limitation
+
+Embeddings measure semantic similarity between candidate and original.
+They cannot detect loss of conditionality.
+
+Example: *"reversibelt men bara under vissa förutsättningar när confidence är låg"*
+scores 100% (candidate = original sentence) — technically correct,
+but the system cannot know whether a shorter candidate would preserve
+the conditional structure.
+
+This is not an implementation problem. It is a structural one.
+
+**Conclusion:** exp_016 is complete as a tool. It does what it can do.
+
+## Architecture consequence
+
+A complete solution requires two components working together:
+
+```
+User prompt
+    ↓
+LLM (Claude) — compress, preserving conditionality
+    ↓
+Embedding validator — verify coverage >= 0.90
+    ↓
+coverage OK? → send compressed
+coverage fail? → raw fallback
+```
+
+**LLM = compressor. Embedding = validator. They are complementary, not competitors.**
+
+This is the architecture for exp_017.

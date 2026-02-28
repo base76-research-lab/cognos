@@ -13,7 +13,7 @@ cognos
 `python -m pytest`
 
 ## Ignorera
-.git, figures, legacy
+.git, .venv, figures, legacy
 
 ## Konventioner
 - Type hints används i Python-kod
